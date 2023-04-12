@@ -7,22 +7,98 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="468.css" rel="stylesheet">
+		<link href="745.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
 	<body class="body">
+		<div class="loader-page">
+			<div class="loader loader--style3 loader-page-svg" title="2"><svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+					<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+						<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+					</path>
+				</svg></div>
+		</div>
 		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner"><button class="header-burger" data-mobile-menu=""><span></span></button><button class="header__order"><svg class="header-svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
+							</svg><span>Куда доставить заказ?</span></button><button class="header__user"><svg class="header-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></button></div>
+				</div>
+			</header>
 			<div class="overlay"></div>
 			<div class="modal">
 				<div class="modal__item" data-modal="1">
 					<div class="basket-modal" data-fancy-modal="modal-1">
 						<div class="basket-modal__inner">
 							<p class="basket-modal__title">Очистить корину?</p>
-							<div class="basket-modal__buttons"><button class="basket-modal__btn">Нет</button><button class="basket-modal__btn basket-modal__btn_green">Да</button></div>
+							<div class="basket-modal__buttons"><button class="basket-modal__btn">Нет</button><button class="basket-modal__btn basket-modal__btn_green" data-basket-modal="close">Да</button></div>
 						</div>
 					</div>
 					<div class="basket">
+						<div class="basket-empty">
+							<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><svg class="basket-empty__svg-bg" width="311" height="300" viewBox="0 0 311 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M112.594 154.876C100.149 161.222 93.1333 174.217 93.1333 184.665C93.1333 211.301 114.18 219.223 163.634 233.491C201.274 244.263 223.601 249.336 223.601 283.57C232.853 277.871 245.298 265.18 245.298 247.113C245.298 223.346 227.749 207.482 174.493 194.164C118.003 179.936 112.594 176.763 112.594 154.876ZM162.353 47.0988C181.813 61.6901 187.243 84.1833 187.243 102.897C187.243 121.914 182.139 144.428 162.353 158.049C199.362 154.876 222.32 134.283 222.32 102.897C222.32 72.4618 199.342 50.5951 162.353 47.0988ZM149.278 47.4222C112.594 50.9184 89.3103 72.7851 89.3103 102.897C89.3103 133.01 112.268 154.896 149.603 158.372C129.512 144.105 124.408 121.591 124.408 102.897C124.388 84.2035 129.492 61.0434 149.278 47.4222ZM0 152.027C0 83.2335 34.4471 31.2545 90.5914 9.38784C163.004 -16.6016 217.216 12.8841 224.557 79.1309C233.179 68.6624 238.588 54.7178 238.588 38.8735C238.588 27.152 236.026 20.1797 232.853 14.7838C281.657 39.1969 311 88.3262 311 152.047C311 217.667 280.071 267.746 229.031 291.533C157.9 315.946 104.948 286.137 97.6272 220.517C89.656 230.985 83.9013 245.88 83.9013 259.824C83.9013 274.092 90.2864 289.936 101.45 298.808C38.9004 279.468 0 225.569 0 152.027Z" fill="#F5F5F5"></path>
+							</svg>
+							<div class="basket-empty__row">
+								<p class="basket-empty__text">В корзине пусто</p>
+								<p class="basket-empty__subtext">Выберите блюда в меню нашиз ресторанов<br />Доставка бесплатаная</p>
+							</div>
+							<div class="basket-empty__row">
+								<div class="modal-restaurants">
+									<div class="close modal-restaurants__close" data-modalrestourants-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="modal-restaurants__title">
+										<h3>Рестораны</h3>
+									</div>
+									<div class="modal-restaurants__items">
+										<div class="modal-restaurants__item">
+											<div class="modal-restaurants__item-col">
+												<picture class="picture">
+													<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+												</picture>
+											</div>
+											<div class="modal-restaurants__item-col">
+												<h4 class="modal-restaurants__item-title">Fich Box</h4>
+												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
+											</div>
+										</div>
+										<div class="modal-restaurants__item">
+											<div class="modal-restaurants__item-col">
+												<picture class="picture">
+													<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+												</picture>
+											</div>
+											<div class="modal-restaurants__item-col">
+												<h4 class="modal-restaurants__item-title">Fich Box</h4>
+												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
+											</div>
+										</div>
+										<div class="modal-restaurants__item">
+											<div class="modal-restaurants__item-col">
+												<picture class="picture">
+													<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+												</picture>
+											</div>
+											<div class="modal-restaurants__item-col">
+												<h4 class="modal-restaurants__item-title">Fich Box</h4>
+												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="basket__row-top">
 							<div class="basket__title">Корзина</div><button class="basket__btn basket__row-top_btn" data-fancy-button="modal-1"><svg class="basket-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -31,7 +107,7 @@
 									<path d="M8.6084 13.75H11.3834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 									<path d="M7.91675 10.4167H12.0834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg><span>Очистить</span></button>
-							<div class="close basket__close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></div>
@@ -62,46 +138,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -134,46 +174,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -206,46 +210,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -278,46 +246,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -350,46 +282,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -422,10 +318,10 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -458,10 +354,190 @@
 											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
 											<div class="basket-controls__col">
 												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
-													<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="basket__item-col">
+										<div class="basket__item-imgBox">
+											<picture class="picture basket__item-img">
+												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
+											</picture>
+										</div>
+									</div>
+									<div class="basket__item-col">
+										<h3 class="basket__item-title">Название</h3>
+										<p class="basket__item-weight"></p>
+										<div class="basket__item-discription">
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p>
+										</div>
+										<div class="basket-controls">
+											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+											<div class="basket-controls__col">
+												<div class="basket-controls__price">999<span>777</span></div>
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="basket__item-col">
+										<div class="basket__item-imgBox">
+											<picture class="picture basket__item-img">
+												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
+											</picture>
+										</div>
+									</div>
+									<div class="basket__item-col">
+										<h3 class="basket__item-title">Название</h3>
+										<p class="basket__item-weight"></p>
+										<div class="basket__item-discription">
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p>
+										</div>
+										<div class="basket-controls">
+											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+											<div class="basket-controls__col">
+												<div class="basket-controls__price">999<span>777</span></div>
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="basket__item-col">
+										<div class="basket__item-imgBox">
+											<picture class="picture basket__item-img">
+												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
+											</picture>
+										</div>
+									</div>
+									<div class="basket__item-col">
+										<h3 class="basket__item-title">Название</h3>
+										<p class="basket__item-weight"></p>
+										<div class="basket__item-discription">
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p>
+										</div>
+										<div class="basket-controls">
+											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+											<div class="basket-controls__col">
+												<div class="basket-controls__price">999<span>777</span></div>
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="basket__item-col">
+										<div class="basket__item-imgBox">
+											<picture class="picture basket__item-img">
+												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
+											</picture>
+										</div>
+									</div>
+									<div class="basket__item-col">
+										<h3 class="basket__item-title">Название</h3>
+										<p class="basket__item-weight"></p>
+										<div class="basket__item-discription">
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p>
+										</div>
+										<div class="basket-controls">
+											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+											<div class="basket-controls__col">
+												<div class="basket-controls__price">999<span>777</span></div>
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="basket__item-col">
+										<div class="basket__item-imgBox">
+											<picture class="picture basket__item-img">
+												<source type="image/webp" srcset="assets/images/main-slide-1.webp"><img class="picture__img" src="assets/images/main-slide-1.jpg">
+											</picture>
+										</div>
+									</div>
+									<div class="basket__item-col">
+										<h3 class="basket__item-title">Название</h3>
+										<p class="basket__item-weight"></p>
+										<div class="basket__item-discription">
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p><span></span>
+											<p>Lorem, ipsum dolor.</p>
+										</div>
+										<div class="basket-controls">
+											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+											<div class="basket-controls__col">
+												<div class="basket-controls__price">999<span>777</span></div>
+												<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></button>
+													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></button>
@@ -476,8 +552,16 @@
 							<div class="controls__row">
 								<div class="controls__basket"><button class="controls__basket-btn" data-basket="promo">Промокод</button><button class="controls__basket-btn" data-basket="loyalty">Карта лояльности</button></div>
 								<div class="controls__input">
-									<div class="controls__input-promo controls__input-active" data-basketbox="promo"><label><input placeholder="Введите промокод" data-input="1"><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button></label></div>
-									<div class="controls__input-loyalty" data-basketbox="loyalty"><label><input placeholder="Введите № карты лояльности" data-input="2"><button class="controls__input-btn" id="basket-input-btn">Применить</button></label></div>
+									<div class="controls__input-promo controls__input-active" data-basketbox="promo"><label>
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Введите промокод</div><input class="input" data-input="1" required placeholder="Введите промокод">
+											</div><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button>
+										</label></div>
+									<div class="controls__input-loyalty" data-basketbox="loyalty"><label>
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Введите № карты лояльности</div><input class="input" data-input="2" required placeholder="Введите № карты лояльности">
+											</div><button class="controls__input-btn" id="basket-input-btn">Применить</button>
+										</label></div>
 									<div class="controls__input-success"><svg class="controls__input-success-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect width="28" height="28" rx="14" fill="url(#paint0_linear_178_10846)"></rect>
 											<path d="M9 14L12.3294 17L19 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -552,8 +636,8 @@
 									</picture>
 								</div>
 								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
+									<h4 class="modal-restaurants__item-title">Fich Box</h4>
+									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
 								</div>
 							</div>
 							<div class="modal-restaurants__item">
@@ -563,8 +647,8 @@
 									</picture>
 								</div>
 								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
+									<h4 class="modal-restaurants__item-title">Fich Box</h4>
+									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
 								</div>
 							</div>
 							<div class="modal-restaurants__item">
@@ -574,117 +658,135 @@
 									</picture>
 								</div>
 								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Lorem, ipsum.</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">lorem</button><button class="modal-restaurants__item-btn btn-green">lorem</button></div>
+									<h4 class="modal-restaurants__item-title">Fich Box</h4>
+									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn btn-green">О ресторане</button></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal__item" data-modal="3">
-					<div class="modal-booking">
-						<div class="close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg></div>
-						<div class="modal-booking__title">Забронировать стол</div>
-						<form class="form modal-booking__grid" action="#">
-							<div class="modal-booking__item modal-booking__restaurants">
-								<div class="select-wrapper">
-									<div class="select"><select class="select__select" style="width: 100%">
-											<option value="Fish Box">Fish Box</option>
-											<option value="Zafferano Estate">Zafferano Estate</option>
-											<option value="Milano Estate">Milano Estate</option>
-										</select></div>
-								</div>
+					<div class="booking">
+						<div class="booking__inner">
+							<div class="close" data-close="1"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div>
+							<div class="back" data-back="1"><svg class="back-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.95019 4.07992L15.4702 10.5999C16.2402 11.3699 16.2402 12.6299 15.4702 13.3999L8.9502 19.9199" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div>
+							<div class="booking__title">
+								<p>Забронировать стол</p>
 							</div>
-							<div class="modal-booking__item"><input class="modal-booking__name" placeholder="На какое имя?"></div>
-							<div class="modal-booking__item"><input class="modal-booking__phone" placeholder="Номер телефона"></div>
-							<div class="modal-booking__item"><input class="modal-booking__input-date" type="datatime-local" placeholder="Дата" id="airdatepicker"></div>
-							<div class="modal-booking__item">
-								<div class="select-wrapper select-date">
+							<form class="form booking__grid" action="#">
+								<div class="booking__item booking__restaurants">
 									<div class="select-wrapper">
-										<div class="select"><select class="select__select" style="width: 100%">
-												<option value="11">11</option>
-												<option value="23">23</option>
-												<option value="324">324</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="8">8</option>
-												<option value="4">4</option>
+										<div class="select"><select class="select__select" style="width: 100%" data-checkout-select="">
+												<option value="Fish Box">Fish Box</option>
+												<option value="Zafferano Estate">Zafferano Estate</option>
+												<option value="Milano Estate">Milano Estate</option>
 											</select></div>
 									</div>
 								</div>
-							</div>
-							<div class="modal-booking__item">
-								<div class="modal-booking__guest">
-									<p>Количество гостей</p>
+								<div class="booking__item">
+									<div class="input-wrapper" data-input-parent="">
+										<div class="input-wrapper__placeholder">На какое имя?</div><input class="input booking__name" data-input="" required placeholder="На какое имя?">
+									</div>
 								</div>
-							</div>
-							<div class="modal-booking__item">
-								<div class="counter"><button data-counter-btn="decrement"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></button>
-									<p>1</p><button data-counter-btn="increment"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></button>
+								<div class="booking__item">
+									<div class="input-wrapper" data-input-parent="">
+										<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона">
+									</div>
 								</div>
-							</div>
-							<div class="modal-booking__item"><textarea placeholder="Комментарий к брони"></textarea></div>
-							<div class="modal-booking__item"><button class="modal-booking__btn">Забронировать стол</button></div>
-							<div class="modal-booking__item">
-								<div class="modal-booking__text">
-									<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
+								<div class="booking__item">
+									<div class="input-wrapper" data-input-parent="">
+										<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date" data-input="" required type="datatime-local" placeholder="Дата" id="airdatepicker">
+									</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M20.75 17.6H3.25" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M9.5 11H14.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 13.5V8.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
 								</div>
-							</div>
-						</form>
+								<div class="booking__item">
+									<div class="select-wrapper select-date">
+										<div class="select-wrapper">
+											<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="">
+													<option value="" disabled="disabled" selected="selected"></option>
+													<option value="14:00">14:00</option>
+													<option value="14:30">14:30</option>
+													<option value="15:00">15:00</option>
+													<option value="15:30">15:30</option>
+													<option value="16:00">16:00</option>
+													<option value="16:30">16:30</option>
+													<option value="17:00">17:00</option>
+													<option value="17:30">17:30</option>
+													<option value="18:00">18:00</option>
+													<option value="18:30">18:30</option>
+													<option value="19:00">19:00</option>
+												</select></div>
+										</div>
+									</div>
+								</div>
+								<div class="booking__item">
+									<div class="booking__guest">
+										<p>Количество гостей</p>
+									</div>
+								</div>
+								<div class="booking__item">
+									<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></button>
+										<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></button>
+									</div>
+								</div>
+								<div class="booking__item">
+									<div class="input-wrapper" data-input-parent="">
+										<div class="input-wrapper__placeholder">Комментарий к брони</div><textarea class="textarea" data-input="" placeholder="Комментарий к брони"></textarea>
+									</div>
+								</div>
+								<div class="booking__item"><button class="booking__btn">Забронировать стол</button></div>
+								<div class="booking__item">
+									<div class="booking__text">
+										<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal__item" data-modal="4">
+					<div class="modal-card">
+						<div class="close modal-card__close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+						<h2 class="modal-card__title">Укажите адрес доставки</h2>
+						<div class="modal-card__row-top">
+							<form class="modal-card__form" action="#">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Улица,дом</div><input class="input modal-card__form-street" data-input="" required placeholder="Улица,дом">
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Подъезд</div><input class="input" data-input="" required placeholder="Подъезд">
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Этаж</div><input class="input" data-input="" required placeholder="Этаж">
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Домофон</div><input class="input" data-input="" required placeholder="Домофон">
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Квартира</div><input class="input" data-input="" required placeholder="Квартира">
+								</div><button class="modal-card__form-btn">Подтвердить адрес</button>
+							</form>
+						</div>
+						<div class="modal-card__row-card">//Карта</div>
 					</div>
 				</div>
 			</div>
@@ -699,11 +801,17 @@
 											<p class="modal-user__title">Войти в аккаунт</p>
 											<p class="modal-user__info modal-user__text">Введите номер телефона и мы отправим SMS-код для входа в аккаунт</p>
 										</div>
-										<div class="modal-user__bottom">
-											<div class="modal-user__bottom-number modal-user__bottom-active"><input type="number">
+										<form class="modal-user__bottom">
+											<div class="modal-user__bottom-number modal-user__bottom-active">
+												<div class="input-wrapper" data-input-parent="">
+													<div class="input-wrapper__placeholder"></div><input class="input" data-input="" required data-mask-phone="" data-parsley-phone="">
+												</div>
 												<p class="modal-user__conditions">Нажимаю на кнопку «Далее», вы даете согласие <a class="modal-user__conditions-link">условия обработки персональных</a></p><button class="modal-user__btn">Далее</button>
 											</div>
-											<div class="modal-user__bottom-sms"><label><input placeholder="SMS-код">
+											<div class="modal-user__bottom-sms"><label>
+													<div class="input-wrapper" data-input-parent="">
+														<div class="input-wrapper__placeholder">SMS-код</div><input class="input" data-input="" required placeholder="SMS-код">
+													</div>
 													<div class="loader loader--style3 modal-user__loader" title="2"><svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 															<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
 																<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
@@ -714,45 +822,31 @@
 													<p class="modal-user__info-bottom modal-user__text">Вы можете запросить новый код через</p><span class="modal-user__counter">0:59</span>
 												</div><a class="modal-user__request">Запросить новый код</a>
 											</div>
-										</div>
+										</form>
 									</div>
 								</div>
 								<div class="sidebar__desktop">
 									<div class="sidebar__item">
-										<div class="sidebar__logo"><svg class="sidebar__logo-svg" xmlns="http://www.w3.org/2000/svg" width="106" height="106" viewbox="0 0 106 106" fill="none">
-												<path d="M48.3452 51.82H51.1256C57.4779 51.82 60.1323 48.8575 60.1323 41.8819C60.1323 35.3405 56.6795 33.3655 52.7294 33.3655H48.3452V51.82ZM59.516 66.8779C59.2708 65.148 59.2078 63.1729 58.8366 60.3995C58.2833 55.588 56.7355 53.613 51.1256 53.613H48.3452V73.1111H53.899V74.841H34.3379V73.1111H39.8287V33.3725H34.3379V31.6426H53.4088C60.1953 31.6426 69.146 33.3094 69.146 41.8259C69.146 48.9205 64.1454 51.701 56.7425 52.4994V52.8076C58.8996 52.9967 62.7306 53.732 65.1959 56.3234C68.0324 59.2859 67.9763 62.7387 68.4036 68.4187C68.7117 71.5633 69.3911 73.4193 70.6868 73.4193C71.9194 73.4193 72.6618 71.9345 73.033 70.4567L74.7629 71.01C74.1465 73.6013 72.6618 75.7585 68.7187 75.7585C63.466 75.7655 60.0762 71.8154 59.516 66.8779Z" fill="#3F3F3F"></path>
-												<path d="M53.5641 100.992L52.8847 100.985C51.3229 100.964 50.6576 101.679 50.6366 103.395C50.6156 105.006 51.456 105.503 52.4295 105.51L53.5081 105.524L53.5641 100.992ZM50.8677 97.2595C50.9237 97.6867 50.9307 98.17 51.0148 98.8563C51.1338 100.04 51.512 100.53 52.8917 100.551L53.5711 100.558L53.6341 95.7607L52.2684 95.7467L52.2754 95.3195L57.0869 95.3825L57.0799 95.8097L55.7282 95.7887L55.5952 105.559L56.9469 105.58L56.9399 106.007L52.2544 105.944C50.5876 105.923 48.3884 105.482 48.4234 103.388C48.4444 101.644 49.6841 100.978 51.505 100.803V100.726C50.9728 100.67 50.0343 100.481 49.439 99.8368C48.7526 99.1014 48.7806 98.247 48.6896 96.8533C48.6265 96.0759 48.4655 95.6206 48.1433 95.6136C47.8421 95.6066 47.653 95.9708 47.555 96.335L47.1348 96.1879C47.2958 95.5576 47.667 95.0253 48.6335 95.0393C49.9222 95.0603 50.7486 96.0409 50.8677 97.2595Z" fill="#3F3F3F"></path>
-												<path d="M38.2057 92.7695C38.6609 92.9376 39.4243 93.1897 40.5379 93.4909L46.5751 95.1157L46.463 95.522L45.1603 95.1718L42.618 104.606L43.9207 104.956L43.8086 105.362L36.791 103.471C36.4968 103.394 36.0136 103.275 35.6914 103.24L36.3007 100.495L36.7139 100.607C36.5809 102.491 37.0921 103.114 39.1862 103.674L40.5939 104.052L41.7285 99.8362L41.1542 99.6821C39.4874 99.2339 39.1862 99.402 38.5769 101.076L38.1637 100.964L39.3683 96.4814L39.7815 96.5935C39.4173 98.4775 39.5924 98.8207 41.2593 99.2689L41.8336 99.423L43.1293 94.6185L41.6655 94.2263C39.2493 93.5749 38.4508 93.8621 37.7365 95.683L37.3303 95.571L38.2057 92.7695Z" fill="#3F3F3F"></path>
-												<path d="M35.6973 91.9086C35.8513 92.1047 36.0194 92.2868 36.1525 92.3568C36.3696 92.4619 36.5377 92.2237 36.6988 91.9296L37.091 92.1257L35.4521 95.1723L35.0599 94.9762C35.5502 93.3583 35.4591 91.7895 34.0164 91.0822C33.0639 90.6129 31.9783 90.6199 31.39 91.8175C30.8017 93.0152 31.6772 94.2898 32.3635 95.2073C33.288 96.4189 34.1845 97.6235 33.309 99.3955C32.5246 100.985 30.8297 101.37 29.1278 100.53C28.4625 100.201 28.0773 99.7737 27.7901 99.4655C27.6361 99.3044 27.489 99.1854 27.3699 99.1223C27.1388 99.0103 26.9497 99.2554 26.8587 99.4095L26.4805 99.2204L27.7411 96.524L28.1193 96.7131C27.6571 98.2329 28.2244 99.5916 29.2959 100.117C30.1013 100.509 30.9978 100.446 31.5161 99.3885C32.0694 98.2609 31.2009 97.0352 30.5566 96.1528C29.6531 94.9341 28.6166 93.5054 29.478 91.7475C30.3045 90.0736 32.3075 89.7445 34.1845 90.6689C34.9689 91.0611 35.3891 91.5374 35.6973 91.9086Z" fill="#3F3F3F"></path>
-												<path d="M28.4631 87.5726L28.1969 87.9018L27.0834 87.0123L20.9902 94.6533L21.7606 95.2696C22.8602 96.1521 23.8057 95.5008 24.8982 94.5693L25.2344 94.8354L23.2384 97.1466C23.0283 96.9225 22.545 96.4392 22.1738 96.1451L17.6285 92.5242C17.2573 92.2301 16.69 91.8729 16.4238 91.7188L18.2308 89.2605L18.5599 89.5267C17.8806 90.7873 17.4604 91.8519 18.5739 92.7413L19.3443 93.3576L25.4375 85.7167L24.3239 84.8272L24.5901 84.498L28.4631 87.5726Z" fill="#3F3F3F"></path>
-												<path d="M18.7552 83.9954L16.9062 81.8243L14.7281 85.5152L14.7701 85.5642L18.7552 83.9954ZM23.6717 83.8413L23.3496 84.1215L22.4671 83.085L12.2418 87.042L11.8496 86.5798L17.2774 76.9988L16.409 75.9833L16.7311 75.7031L20.219 79.7862L19.8968 80.0664L18.7482 78.7147L17.1584 81.4111L19.2174 83.8203L22.1309 82.6717L21.1364 81.5021L21.4586 81.222L23.6717 83.8413Z" fill="#3F3F3F"></path>
-												<path d="M13.0966 76.564L7.31862 79.2814L7.89292 80.5071L7.50772 80.6892L5.47666 76.3609L5.86186 76.1788L6.42916 77.3905L12.2912 74.638C13.9931 73.8396 15.2677 72.9432 14.3293 70.9471C13.3347 68.832 11.3947 69.2592 9.35668 70.2117L4.195 72.635L4.7693 73.8536L4.3841 74.0357L3.02539 71.1362L3.41059 70.9541L3.98489 72.1728L9.32866 69.6655C11.5278 68.6359 13.6849 68.3067 14.9456 70.9961C16.0732 73.4194 15.828 75.2824 13.0966 76.564Z" fill="#3F3F3F"></path>
-												<path d="M6.18447 63.5792L6.0584 62.9068C5.76425 61.373 4.93082 60.8688 3.24294 61.1909C1.66713 61.4921 1.34496 62.4166 1.53406 63.3691L1.73016 64.4336L6.18447 63.5792ZM9.30809 60.1894C8.90188 60.3295 8.42563 60.4345 7.7743 60.6517C6.63971 61.0088 6.2335 61.4711 6.49263 62.8298L6.6187 63.5021L11.3251 62.5987L11.066 61.261L11.4792 61.1839L12.3827 65.9044L11.9695 65.9814L11.7173 64.6577L2.12236 66.4927L2.37449 67.8164L1.95428 67.8934L1.07182 63.292C0.756654 61.6532 0.74965 59.412 2.80172 59.0198C4.51761 58.6906 5.41407 59.7692 5.95335 61.5201L6.03039 61.5061C5.97436 60.9738 5.97436 60.0213 6.48563 59.3C7.07393 58.4805 7.90736 58.3334 9.25907 57.9693C10.0015 57.7521 10.4217 57.5 10.3586 57.1849C10.3026 56.8907 9.9104 56.7786 9.53221 56.7576L9.58824 56.3164C10.2396 56.3444 10.8349 56.6036 11.017 57.556C11.2691 58.8237 10.4707 59.8252 9.30809 60.1894Z" fill="#3F3F3F"></path>
-												<path d="M6.80053 52.5408L6.98262 49.6974L2.85048 50.832L2.84348 50.895L6.80053 52.5408ZM10.4284 55.8606L10.0082 55.8326L10.0922 54.4668L0 50.1946L0.0420218 49.5923L10.6105 46.4967L10.6946 45.166L11.1148 45.194L10.7716 50.5518L10.3514 50.5238L10.4634 48.7519L7.44486 49.5783L7.24176 52.7439L10.1273 53.9486L10.2253 52.4218L10.6455 52.4498L10.4284 55.8606Z" fill="#3F3F3F"></path>
-												<path d="M11.276 44.6L10.8698 44.4669L11.283 43.1783L2.87867 40.4679C2.31138 40.2858 1.87715 40.4959 1.68105 41.1052L1.54098 41.5884L1.13477 41.4554L2.14329 38.3388L10.4076 35.8875L4.04127 33.8284L3.62806 35.1171L3.22185 34.984L4.17434 32.0215L4.58055 32.1546L4.19535 33.3382L13.8954 36.4688L13.7063 37.0431L3.39694 40.1107L11.4441 42.702L11.8573 41.4204L12.2635 41.5534L11.276 44.6Z" fill="#3F3F3F"></path>
-												<path d="M15.7308 32.9091L15.3736 32.685L16.123 31.4734L7.80966 26.3327L7.29139 27.1731C6.54901 28.3708 7.3054 29.2322 8.35594 30.2057L8.13183 30.5699L5.60352 28.861C5.79962 28.6299 6.22684 28.0836 6.47197 27.6844L9.52555 22.7398C9.77068 22.3406 10.0578 21.7313 10.1839 21.4512L12.8383 22.95L12.6142 23.3141C11.2765 22.7889 10.1699 22.5017 9.4205 23.7133L8.90223 24.5538L17.2155 29.6945L17.9649 28.4828L18.3291 28.7069L15.7308 32.9091Z" fill="#3F3F3F"></path>
-												<path d="M20.9346 25.08C20.7034 25.1711 20.4793 25.2691 20.3743 25.3812C20.2062 25.5563 20.3813 25.7874 20.6124 26.0325L20.3042 26.3477L17.902 23.8544L18.2101 23.5392C19.5969 24.5057 21.1167 24.8979 22.2372 23.7423C22.9796 22.9789 23.3018 21.9424 22.3423 21.0109C21.3828 20.0864 19.898 20.5277 18.8195 20.8989C17.3767 21.4101 15.962 21.8934 14.5402 20.5207C13.2656 19.288 13.4197 17.5581 14.7363 16.1924C15.2546 15.6601 15.7729 15.422 16.1581 15.2469C16.3612 15.1489 16.5153 15.0508 16.6133 14.9458C16.7954 14.7637 16.6133 14.5045 16.4943 14.3715L16.7884 14.0703L18.9665 16.0944L18.6724 16.4025C17.3697 15.4991 15.8989 15.6181 15.0655 16.4796C14.4422 17.1239 14.2321 17.9994 15.0865 18.8188C15.99 19.6942 17.4187 19.239 18.4553 18.8888C19.898 18.3986 21.5719 17.8453 22.9726 19.211C24.3173 20.5067 24.0162 22.5167 22.5594 24.0225C21.9711 24.6458 21.3828 24.8979 20.9346 25.08Z" fill="#3F3F3F"></path>
-												<path d="M32.0906 15.7999L32.9731 15.3306C34.3108 14.6163 34.4929 13.4397 33.7785 12.088C32.9801 10.5892 31.9296 10.253 30.6409 10.9324L29.7584 11.4016L32.0906 15.7999ZM29.5483 11.0164L30.4448 10.5402C31.5724 9.94485 31.6564 8.93632 30.9911 7.68968C30.3467 6.48505 29.5903 6.06483 28.3857 6.70216L27.5033 7.17141L29.5483 11.0164ZM29.2472 17.7889L29.0511 17.4177L30.2417 16.7874L25.6613 8.15892L24.4707 8.78925L24.2676 8.41105L28.3017 6.26794C29.9615 5.38548 31.9436 4.78317 32.9241 6.63213C33.7995 8.27798 32.5109 9.54564 31.4183 10.197L31.4463 10.253C32.5879 9.67871 34.661 8.99235 35.7535 11.0584C36.8741 13.1735 34.9411 14.7704 33.2813 15.6528L29.2472 17.7889Z" fill="#3F3F3F"></path>
-												<path d="M40.0049 12.7822L39.8929 12.369L41.1955 12.0188L40.124 8.06872L35.7817 3.36228L34.5281 3.70546L34.416 3.29224L39.2905 1.96855L39.4026 2.38177L38.0229 2.75296L41.5457 6.689L42.6103 1.51332L41.2936 1.8705L41.1815 1.45729L44.2421 0.630859L44.3542 1.04407L43.1355 1.37324L41.9729 6.94814L43.1986 11.4725L44.5083 11.1223L44.6133 11.5355L40.0049 12.7822Z" fill="#3F3F3F"></path>
-												<path d="M59.9654 11.2408C59.4822 11.1638 58.6838 11.0657 57.5352 10.9957L51.2949 10.5965L51.3229 10.1693L52.6676 10.2533L53.298 0.511265L51.9463 0.420218L51.9743 0L59.223 0.46224C59.5242 0.483251 60.0285 0.497258 60.3506 0.476247L60.2946 3.2847L59.8674 3.25669C59.6222 1.38672 58.9989 0.875454 56.8348 0.735381L55.385 0.644334L55.1049 5.0076L55.6932 5.04262C57.4161 5.15467 57.6752 4.92355 57.9414 3.16564L58.3616 3.19366L58.0674 7.82306L57.6402 7.79504C57.6262 5.88305 57.3881 5.57489 55.6582 5.46283L55.0699 5.42782L54.7547 10.3934L56.2675 10.4914C58.7678 10.6525 59.4962 10.2113 59.8324 8.2853L60.2526 8.31331L59.9654 11.2408Z" fill="#3F3F3F"></path>
-												<path d="M61.1562 11.1425L61.2893 10.7363L62.55 11.1775L65.7786 1.96072L64.518 1.51949L64.6581 1.11328L68.0408 2.2969L67.9428 10.141L67.9918 10.155L72.6912 3.92874L76.046 5.09835L75.9059 5.49756L74.6452 5.05633L71.4166 14.2801L72.6772 14.7213L72.5372 15.1205L68.0268 13.5447L68.1669 13.1455L69.4415 13.5868L72.3621 5.24542L72.3481 5.1894L66.437 12.9914L65.8627 12.7883L65.9467 3.09531L65.8977 3.12332L63.0262 11.3456L64.3009 11.7938L64.1608 12.193L61.1562 11.1425Z" fill="#3F3F3F"></path>
-												<path d="M73.0977 15.8218L73.3218 15.4576L74.4704 16.172L79.604 7.85867L78.4624 7.1513L78.6866 6.78711L82.7487 9.30141L82.5245 9.6586L81.39 8.95824L76.2493 17.2715L77.3839 17.9719L77.1598 18.3361L73.0977 15.8218Z" fill="#3F3F3F"></path>
-												<path d="M78.0273 18.6861L78.3145 18.3779L79.309 19.2954L85.2901 12.803C85.6893 12.3688 85.6823 11.8855 85.2131 11.4513L84.8419 11.1081L85.129 10.793L87.5383 13.0131L86.2986 21.5435L90.83 16.627L89.8355 15.7095L90.1226 15.4014L92.4058 17.5095L92.1187 17.8246L91.2012 16.9842L84.2886 24.4781L83.8404 24.0649L85.3812 13.4193L79.6522 19.6316L80.6467 20.549L80.3595 20.8642L78.0273 18.6861Z" fill="#3F3F3F"></path>
-												<path d="M92.6645 29.5133L94.0022 32.0346L96.9227 28.904L96.8947 28.848L92.6645 29.5133ZM87.832 28.5888L88.2032 28.3857L88.8406 29.5904L99.6822 27.9375L99.9693 28.4698L92.5945 36.643L93.2178 37.8196L92.8396 38.0227L90.3183 33.2813L90.6965 33.0782L91.5299 34.647L93.6661 32.3638L92.1813 29.5623L89.0927 30.0526L89.8141 31.4043L89.4359 31.6074L87.832 28.5888Z" fill="#3F3F3F"></path>
-												<path d="M98.0012 36.812C100.845 36.1187 103.779 37.2743 104.592 40.608C104.816 41.5185 104.697 42.1908 104.599 42.6811C104.543 42.9612 104.515 43.2344 104.55 43.3814C104.599 43.5705 104.802 43.5845 105.117 43.5425L105.215 43.9557L101.776 44.9222L101.678 44.509C103.471 43.8087 104.571 42.4009 104.178 40.7901C103.625 38.5349 101.237 38.4019 98.5405 39.0602C95.683 39.7606 93.722 40.9512 94.2613 43.1643C94.4364 43.8717 94.8636 44.425 95.3258 44.6491L97.637 44.0818L97.3149 42.7581L97.7281 42.6601L98.7996 47.0513L98.3864 47.1494L98.0993 45.9728L96.0822 46.463C95.0317 45.8117 94.1492 44.558 93.8271 43.2344C93.0216 39.9006 94.9336 37.5614 98.0012 36.812Z" fill="#3F3F3F"></path>
-												<path d="M99.039 50.5806L99.074 53.4311L103.108 51.9883V51.9253L99.039 50.5806ZM95.166 47.548L95.5932 47.541L95.6072 48.9067L105.994 52.4085L106.001 53.0179L95.6983 56.9049L95.7123 58.2426L95.2851 58.2496L95.222 52.8778L95.6493 52.8708L95.6703 54.6427L98.6188 53.5922L98.5838 50.4265L95.6142 49.446L95.6353 50.9798L95.215 50.9868L95.166 47.548Z" fill="#3F3F3F"></path>
-												<path d="M93.0371 66.7228C93.3873 65.5251 93.6534 64.6217 94.2698 62.1004L95.0892 58.7246L95.5024 58.8227L95.1872 60.1323L104.677 62.4365L104.992 61.1269L105.406 61.2249L104.278 65.8683L103.865 65.7703L104.18 64.4746L94.69 62.1704L94.1997 64.1734C93.8425 65.6512 94.3608 66.5407 96.1047 67.122L95.9997 67.5492L93.0371 66.7228Z" fill="#3F3F3F"></path>
-												<path d="M95.0524 72.06L93.7357 74.5883L97.9729 75.2256L98.0009 75.1696L95.0524 72.06ZM93.0774 67.5566L93.4556 67.7527L92.8252 68.9644L100.319 76.9695L100.039 77.5088L89.1273 76.045L88.511 77.2287L88.1328 77.0326L90.6191 72.2701L90.9973 72.4662L90.1779 74.035L93.2735 74.5042L94.7442 71.6958L92.5941 69.4266L91.8868 70.7853L91.5086 70.5892L93.0774 67.5566Z" fill="#3F3F3F"></path>
-												<path d="M89.7933 83.7493L89.338 84.2605C88.3085 85.4371 88.4206 86.4036 89.7092 87.5382C90.9209 88.5958 91.8383 88.2806 92.4827 87.5522L93.19 86.7468L89.7933 83.7493ZM85.1989 83.3641C85.5561 83.6022 85.9343 83.9103 86.5016 84.2885C87.4821 84.9679 88.0984 85.0029 89.0089 83.9664L89.4571 83.4551L85.8572 80.2895L84.9538 81.312L84.6316 81.0318L87.8042 77.418L88.1264 77.6981L87.2369 78.7136L94.5768 85.164L95.4662 84.1485L95.7884 84.4286L92.6928 87.9514C91.5932 89.2051 89.8283 90.5848 88.2595 89.2051C86.9498 88.0565 87.244 86.6768 88.3015 85.185L88.2455 85.136C87.8603 85.5072 87.1039 86.0885 86.2214 86.1305C85.2129 86.1725 84.5826 85.5982 83.469 84.7648C82.8387 84.3095 82.3834 84.1345 82.1733 84.3726C81.9772 84.5967 82.1243 84.9749 82.3414 85.283L81.9562 85.5142C81.578 84.9819 81.4169 84.3586 82.0613 83.6232C82.9157 82.6567 84.1974 82.6707 85.1989 83.3641Z" fill="#3F3F3F"></path>
-												<path d="M77.3973 93.9746C78.721 95.8656 80.654 97.9737 82.629 96.594C84.604 95.2072 83.2943 92.6649 81.9707 90.7809C80.647 88.89 78.777 86.8519 76.788 88.2386C74.8129 89.6183 76.0736 92.0836 77.3973 93.9746ZM83.8616 89.4573C85.8927 92.3638 85.0943 95.4033 82.8811 96.9511C80.682 98.4919 77.5514 98.1978 75.5203 95.2843C73.4893 92.3778 74.3367 89.4082 76.5428 87.8744C78.756 86.3266 81.8306 86.5508 83.8616 89.4573Z" fill="#3F3F3F"></path>
-												<path d="M67.4652 92.6094L74.798 100.881L75.9606 100.439L76.1147 100.839L71.4083 102.632L71.2542 102.239L72.732 101.672L67.5143 95.677L67.4582 95.698L67.6403 103.612L68.964 103.115L69.1111 103.507L66.1345 104.649L65.9805 104.249L67.1501 103.808L66.8979 92.8265L67.4652 92.6094Z" fill="#3F3F3F"></path>
-											</svg></div>
+										<div class="sidebar__logo"><a class="sidebar__logo-link" target="_blank"><svg class="sidebar__logo-svg" width="166" height="100" viewBox="0 0 166 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_420_14622)">
+														<path d="M73.2861 35.2206C70.4679 36.6636 68.8792 39.6186 68.8792 41.9945C68.8792 48.0515 73.6453 49.853 84.8442 53.0974C93.3678 55.5469 98.4239 56.7004 98.4239 64.4853C100.519 63.1894 103.337 60.3033 103.337 56.1949C103.337 50.7905 99.3633 47.1829 87.3032 44.1544C74.511 40.9191 73.2861 40.1976 73.2861 35.2206ZM84.5541 10.7123C88.961 14.0258 90.1905 19.1452 90.1905 23.4008C90.1905 27.7252 89.0346 32.8447 84.5541 35.9421C92.9349 35.2206 98.1338 30.5377 98.1338 23.4008C98.1338 16.4798 92.9303 11.5074 84.5541 10.7123ZM81.5932 10.7859C73.2861 11.5809 68.0135 16.5533 68.0135 23.4008C68.0135 30.2482 73.2124 35.2252 81.6669 36.0156C77.1173 32.7712 75.9615 27.6517 75.9615 23.4008C75.9569 19.1498 77.1127 13.8833 81.5932 10.7859ZM47.7891 34.5726C47.7891 18.9292 55.5897 7.10939 68.3036 2.13697C84.7015 -3.77296 96.978 2.932 98.6404 17.9963C100.593 15.6158 101.818 12.4449 101.818 8.84193C101.818 6.17649 101.237 4.59101 100.519 3.36399C111.571 8.91546 118.216 20.0873 118.216 34.5772C118.216 49.4991 111.212 60.887 99.6534 66.296C83.5457 71.8474 71.5547 65.069 69.8969 50.1471C68.0918 52.5276 66.7886 55.9145 66.7886 59.0855C66.7886 62.33 68.2346 65.9329 70.7626 67.9504C56.5981 63.5524 47.7891 51.296 47.7891 34.5726Z" fill="#131313"></path>
+														<path d="M9.1268 97.1324C9.1268 98.5386 7.10527 98.9844 5.45213 98.9844C3.33851 98.9844 1.64853 98.3181 1.64853 96.4293C1.64853 95.9284 1.74063 95.3355 1.92943 94.9679C0.722961 95 0 95.8916 0 96.9807C0 99.1085 2.65239 100 5.45213 100C7.86507 100 10.6832 99.2418 10.6832 96.7785C10.6832 95.4458 9.7945 94.4256 6.62177 93.7592C6.10142 93.6489 5.62251 93.557 5.21268 93.4605C2.9471 93.0147 2.07678 92.6287 2.07678 91.7923C2.07678 91.6269 2.0952 91.4247 2.13204 91.2363C1.3354 91.4201 0.704541 91.9394 0.704541 92.7528C0.704541 94.012 1.81891 94.4761 5.2311 95.216C5.48897 95.2712 5.73303 95.3263 6.00932 95.3815C8.367 95.8916 9.1268 96.2041 9.1268 97.1324ZM7.45985 88.0975C7.45985 89.467 6.57111 90.5239 5.02849 90.5239C3.49047 90.5239 2.59713 89.467 2.59713 88.0975C2.59713 86.728 3.48587 85.6526 5.02849 85.6526C6.56651 85.6526 7.45985 86.728 7.45985 88.0975ZM8.91958 86.7188C9.80832 86.4109 10.7569 86.319 11.7608 86.319V84.614C10.1214 84.614 9.1314 85.3953 8.66171 86.2868C7.8881 85.2114 6.44218 84.6324 5.02388 84.6324C2.9471 84.6324 0.810452 85.8732 0.810452 88.0929C0.810452 90.3493 2.94249 91.535 5.02388 91.535C7.10067 91.535 9.23271 90.3493 9.23271 88.0929C9.23732 87.5828 9.1222 87.1232 8.91958 86.7188ZM23.7656 90.0966C23.7656 92.3576 22.3934 94.5405 19.8515 94.5405C17.2912 94.5405 15.9005 92.3576 15.9005 90.0966C15.9005 87.8217 17.2912 85.6342 19.8515 85.6342C22.3934 85.6342 23.7656 87.8171 23.7656 90.0966ZM25.5477 90.0966C25.5477 86.9302 23.1163 84.6186 19.8515 84.6186C16.5682 84.6186 14.1185 86.9348 14.1185 90.0966C14.1185 93.2445 16.5682 95.5607 19.8515 95.5607C23.1163 95.5561 25.5477 93.2445 25.5477 90.0966ZM38.2985 93.0285C38.3031 93.0239 38.3031 93.0239 38.3077 93.0193V92.9642C38.3077 92.9872 38.3031 93.0056 38.2985 93.0285ZM38.2985 93.0285C37.3913 93.7638 36.5394 94.0396 35.1534 94.0396C33.2792 94.0396 32.1096 93.41 32.1096 90.8916V84.8024H30.5347V90.8181C30.5347 94.1682 32.3168 95.5561 34.8402 95.5561C36.9447 95.5561 38.0913 94.5818 38.2985 93.0285ZM38.9386 95.3723H40.5134V84.8024H38.9386V95.3723ZM56.1192 95.3723L51.3164 90.2804C52.7807 90.0414 54.0609 89.3567 54.0609 87.5782C54.0609 85.1333 51.4822 84.8024 49.6448 84.8024H46.4352V95.3723H48.0101V85.8181H49.4744C50.9204 85.8181 52.3709 86.1535 52.3709 87.5782C52.3709 89.2648 50.8697 89.5037 49.4744 89.5037H48.8067L54.0747 95.3723H56.1192ZM69.4733 95.3723H71.0481V84.8024H69.639L65.596 91.5212L61.4977 84.8024H59.9597V95.3723H60.8852V86.6912L64.873 93.2261H65.5223L69.4733 86.7831V95.3723ZM76.9515 95.3723H84.1121V94.3521H78.5264V90.3539H83.2924V89.3337H78.5264V85.8181H84.1121V84.7978H76.9515V95.3723ZM93.4829 85.8181H97.4891V84.7978H87.8973V85.8181H91.9035V95.3723H93.4783V85.8181H93.4829ZM117.58 90.0966C117.58 92.9274 115.853 94.3567 112.74 94.3567H111.331V85.8227H112.74C115.853 85.8181 117.58 87.2427 117.58 90.0966ZM119.344 90.0966C119.344 86.1719 116.079 84.8024 112.74 84.8024H109.752V95.3723H112.74C116.074 95.3723 119.344 94.0028 119.344 90.0966ZM134.181 95.3723L129.378 90.2804C130.842 90.0414 132.122 89.3567 132.122 87.5782C132.122 85.1333 129.543 84.8024 127.706 84.8024H124.497V95.3723H126.071V85.8181H127.536C128.982 85.8181 130.428 86.1535 130.428 87.5782C130.428 89.2648 128.926 89.5037 127.536 89.5037H126.868L132.136 95.3723H134.181ZM138.003 95.3723H139.577V84.8024H138.003V95.3723ZM149.616 95.4458L154.4 84.7978H153.341L149.538 93.2951L145.734 84.7978H143.989L148.792 95.4458H149.616ZM160.414 94.3521V90.3539H165.18V89.3337H160.414V85.8181H166V84.7978H158.839V95.3677H166V94.3475H160.414V94.3521Z" fill="#131313">
+															<defs></defs>
+															<clippath id="clip0_420_14622"></clippath>
+															<rect width="166" height="100" fill="white"></rect>
+														</path>
+													</g>
+												</svg></a></div>
 										<div class="sidebar__address">
 											<h3 class="sidebar__address-title">Адрес доставки</h3>
-											<div class="sidebar__address-controls"><button class="sidebar-btn sidebar-btn_grey"><span>Куда доставить заказ?</span><svg class="sidebar-btn__svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
-													</svg></button></div>
+											<div class="sidebar__address-controls">
+												<div class="address" data-sidebar="4"><button class="address-btn">
+														<p>Куда доставить заказ?</p><svg class="address-btnp-svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
+														</svg>
+													</button></div>
+											</div>
 										</div>
 									</div>
 									<div class="sidebar__item"><button class="sidebar-btn sidebar-btn_green sidebar__restaurants" data-sidebar="2"><span>Рестораны</span><svg class="sidebar-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -764,20 +858,23 @@
 												<path d="M15 11H9" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 											</svg></button></div>
 									<div class="sidebar__item">
-										<div class="sidebar__phone"><a class="sidebar__phone-tel" href="tel:84994555595"><svg class="sidebar__phone-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect width="24" height="24" rx="8" fill="#A0E1DC"></rect>
-													<path d="M18.6463 16.2199C18.6463 16.4599 18.593 16.7066 18.4797 16.9466C18.3663 17.1866 18.2197 17.4133 18.0263 17.6266C17.6997 17.9866 17.3397 18.2466 16.933 18.4133C16.533 18.5799 16.0997 18.6666 15.633 18.6666C14.953 18.6666 14.2263 18.5066 13.4597 18.1799C12.693 17.8533 11.9263 17.4133 11.1663 16.8599C10.3997 16.2999 9.67301 15.6799 8.97967 14.9933C8.29301 14.2999 7.67301 13.5733 7.11967 12.8133C6.57301 12.0533 6.13301 11.2933 5.81301 10.5399C5.49301 9.77992 5.33301 9.05325 5.33301 8.35992C5.33301 7.90659 5.41301 7.47325 5.57301 7.07325C5.73301 6.66659 5.98634 6.29325 6.33967 5.95992C6.76634 5.53992 7.23301 5.33325 7.72634 5.33325C7.91301 5.33325 8.09967 5.37325 8.26634 5.45325C8.43967 5.53325 8.59301 5.65325 8.71301 5.82659L10.2597 8.00659C10.3797 8.17325 10.4663 8.32659 10.5263 8.47325C10.5863 8.61325 10.6197 8.75325 10.6197 8.87992C10.6197 9.03992 10.573 9.19992 10.4797 9.35325C10.393 9.50659 10.2663 9.66659 10.1063 9.82659L9.59967 10.3533C9.52634 10.4266 9.49301 10.5133 9.49301 10.6199C9.49301 10.6733 9.49967 10.7199 9.51301 10.7733C9.53301 10.8266 9.55301 10.8666 9.56634 10.9066C9.68634 11.1266 9.89301 11.4133 10.1863 11.7599C10.4863 12.1066 10.8063 12.4599 11.153 12.8133C11.513 13.1666 11.8597 13.4933 12.213 13.7933C12.5597 14.0866 12.8463 14.2866 13.073 14.4066C13.1063 14.4199 13.1463 14.4399 13.193 14.4599C13.2463 14.4799 13.2997 14.4866 13.3597 14.4866C13.473 14.4866 13.5597 14.4466 13.633 14.3733L14.1397 13.8733C14.3063 13.7066 14.4663 13.5799 14.6197 13.4999C14.773 13.4066 14.9263 13.3599 15.093 13.3599C15.2197 13.3599 15.353 13.3866 15.4997 13.4466C15.6463 13.5066 15.7997 13.5933 15.9663 13.7066L18.173 15.2733C18.3463 15.3933 18.4663 15.5333 18.5397 15.6999C18.6063 15.8666 18.6463 16.0333 18.6463 16.2199Z" stroke="#131313" stroke-width="1.3" stroke-miterlimit="10"></path>
-													<path d="M17.3328 6.6665H14.1328M17.3328 6.6665V9.8665V6.6665Z" stroke="#131313" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>8 499 455-55-95</span></a>
+										<div class="sidebar__phone">
+											<div class="phone-link"><a class="phone-link-tel" href="tel:84994555595"><svg class="phone-link-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#A0E1DC"></rect>
+														<path d="M18.6463 16.2199C18.6463 16.4599 18.593 16.7066 18.4797 16.9466C18.3663 17.1866 18.2197 17.4133 18.0263 17.6266C17.6997 17.9866 17.3397 18.2466 16.933 18.4133C16.533 18.5799 16.0997 18.6666 15.633 18.6666C14.953 18.6666 14.2263 18.5066 13.4597 18.1799C12.693 17.8533 11.9263 17.4133 11.1663 16.8599C10.3997 16.2999 9.67301 15.6799 8.97967 14.9933C8.29301 14.2999 7.67301 13.5733 7.11967 12.8133C6.57301 12.0533 6.13301 11.2933 5.81301 10.5399C5.49301 9.77992 5.33301 9.05325 5.33301 8.35992C5.33301 7.90659 5.41301 7.47325 5.57301 7.07325C5.73301 6.66659 5.98634 6.29325 6.33967 5.95992C6.76634 5.53992 7.23301 5.33325 7.72634 5.33325C7.91301 5.33325 8.09967 5.37325 8.26634 5.45325C8.43967 5.53325 8.59301 5.65325 8.71301 5.82659L10.2597 8.00659C10.3797 8.17325 10.4663 8.32659 10.5263 8.47325C10.5863 8.61325 10.6197 8.75325 10.6197 8.87992C10.6197 9.03992 10.573 9.19992 10.4797 9.35325C10.393 9.50659 10.2663 9.66659 10.1063 9.82659L9.59967 10.3533C9.52634 10.4266 9.49301 10.5133 9.49301 10.6199C9.49301 10.6733 9.49967 10.7199 9.51301 10.7733C9.53301 10.8266 9.55301 10.8666 9.56634 10.9066C9.68634 11.1266 9.89301 11.4133 10.1863 11.7599C10.4863 12.1066 10.8063 12.4599 11.153 12.8133C11.513 13.1666 11.8597 13.4933 12.213 13.7933C12.5597 14.0866 12.8463 14.2866 13.073 14.4066C13.1063 14.4199 13.1463 14.4399 13.193 14.4599C13.2463 14.4799 13.2997 14.4866 13.3597 14.4866C13.473 14.4866 13.5597 14.4466 13.633 14.3733L14.1397 13.8733C14.3063 13.7066 14.4663 13.5799 14.6197 13.4999C14.773 13.4066 14.9263 13.3599 15.093 13.3599C15.2197 13.3599 15.353 13.3866 15.4997 13.4466C15.6463 13.5066 15.7997 13.5933 15.9663 13.7066L18.173 15.2733C18.3463 15.3933 18.4663 15.5333 18.5397 15.6999C18.6063 15.8666 18.6463 16.0333 18.6463 16.2199Z" stroke="#131313" stroke-width="1.3" stroke-miterlimit="10"></path>
+														<path d="M17.3328 6.6665H14.1328M17.3328 6.6665V9.8665V6.6665Z" stroke="#131313" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg><span>8 499 455-55-95</span></a></div>
 											<p class="sidebar__phone-text">Доставляем с 10 до 22</p>
 										</div>
 										<div class="sidebar__links"><a class="sidebar__link" href="#">Доставка</a><a class="sidebar__link" href="#">Самовывоз</a></div>
 										<div class="sidebar__buttons"><button class="sidebar-btn sidebar-btn_white" data-fancy-button="k1"><span>Личный кабинет</span><svg class="sidebar-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg></button><button class="sidebar__basket" data-sidebar="1"><span class="sidebar__basket-title">Корзина</span>
-												<div class="sidebar__basket-current"><span>8</span></div><span class="sidebar__basket-price">5 680₽</span>
-											</button></div>
+												</svg></button>
+											<div class="sidebar__basket"><button class="btn-basket" data-sidebar="1"><span class="btn-basket-title">Корзина</span>
+													<div class="btn-basket-current"><span>8</span></div><span class="btn-basket-price">5 680₽</span>
+												</button></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -786,7 +883,7 @@
 							<div class="modal-chef" data-fancy-modal="chef">
 								<div class="modal-chef__wrapper">
 									<div class="modal-chef__inner">
-										<div class="modal-chef__close-btn" data-close-id="chef">
+										<div class="modal-chef__close-btn" data-fancybox-close="">
 											<div class="close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -814,7 +911,115 @@
 									</div>
 								</div>
 							</div>
-							<section class="restaurant-hero">
+							<div class="booking modal-booking" data-fancy-modal="k2">
+								<div class="modal-booking__inner">
+									<div class="booking__title">
+										<p>Забронировать банкет</p>
+									</div>
+									<form class="form booking__grid" action="#">
+										<div class="booking__item booking__restaurants">
+											<div class="select-wrapper">
+												<div class="select"><select class="select__select" style="width: 100%" data-checkout-select="">
+														<option value="Fish Box">Fish Box</option>
+														<option value="Zafferano Estate">Zafferano Estate</option>
+														<option value="Milano Estate">Milano Estate</option>
+													</select></div>
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">На какое имя?</div><input class="input booking__name" data-input="" required placeholder="На какое имя?">
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона">
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">E-mail</div><input class="input booking__mail" data-input="" required placeholder="E-mail">
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date" data-input="" required type="datatime-local" placeholder="Дата" id="airdatepicker2">
+											</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M16 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M20.75 17.6H3.25" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M9.5 11H14.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M12 13.5V8.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="booking__item">
+											<div class="select-wrapper select-date">
+												<div class="select-wrapper">
+													<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="">
+															<option value="" disabled="disabled" selected="selected"></option>
+															<option value="14:00">14:00</option>
+															<option value="14:30">14:30</option>
+															<option value="15:00">15:00</option>
+															<option value="15:30">15:30</option>
+															<option value="16:00">16:00</option>
+															<option value="16:30">16:30</option>
+															<option value="17:00">17:00</option>
+															<option value="17:30">17:30</option>
+															<option value="18:00">18:00</option>
+															<option value="18:30">18:30</option>
+															<option value="19:00">19:00</option>
+														</select></div>
+												</div>
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Количество гостей</div><input class="input booking__quantity" data-input="" required placeholder="Количество гостей">
+											</div>
+										</div>
+										<div class="booking__item">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Комментарий к брони</div><textarea class="textarea" data-input="" placeholder="Комментарий к брони"></textarea>
+											</div>
+										</div>
+										<div class="booking__item"><button class="booking__btn">Забронировать стол</button></div>
+										<div class="booking__item">
+											<div class="booking__text">
+												<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="modal-req" data-fancy-modal="req">
+								<div class="modal-req__close-btn" data-fancybox-close>
+									<div class="close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
+								<div class="modal-req__wrapper">
+									<div class="modal-req__title">Все условия</div>
+									<div class="modal-req__subtitle">Дополнительные услуги</div>
+									<ul class="modal-req__list">
+										<li class="modal-req__item">Торт на заказ</li>
+										<li class="modal-req__item">Специальное предложение на вина</li>
+									</ul>
+									<div class="modal-req__subtitle">Вместимость</div>
+									<ul class="modal-req__list">
+										<li class="modal-req__item">Веранда — 100 чел</li>
+										<li class="modal-req__item">Основной зал — 80–100 чел</li>
+										<li class="modal-req__item">Банкетный зал — 30–40 чел</li>
+										<li class="modal-req__item">Шатер (только в летний период) — 100–150 человек</li>
+									</ul>
+								</div>
+							</div>
+							<div class="gourmet-logo__mobile"><svg width="203" height="25" viewBox="0 0 203 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.05093 12.49C8.05054 13.0018 7.4866 14.0497 7.4866 14.8923C7.4866 17.0404 9.17844 17.6793 13.1539 18.8299C16.1795 19.6986 17.9744 20.1077 17.9744 22.8686C18.7181 22.409 19.7185 21.3855 19.7185 19.9284C19.7185 18.0118 18.3078 16.7324 14.0267 15.6583C9.48575 14.511 9.05093 14.2551 9.05093 12.49ZM13.0509 3.79829C14.6152 4.97338 15.0517 6.78898 15.0517 8.29817C15.0517 9.83181 14.6414 11.6474 13.0509 12.7459C16.0259 12.49 17.8714 10.8293 17.8714 8.29817C17.8714 5.84369 16.0243 4.08025 13.0509 3.79829ZM11.9998 3.82437C9.05093 4.10632 7.17929 5.86977 7.17929 8.29817C7.17929 10.7266 9.02478 12.4916 12.026 12.772C10.4109 11.6213 10.0007 9.80574 10.0007 8.29817C9.99902 6.79061 10.4093 4.92285 11.9998 3.82437ZM0 12.2602C0 6.71238 2.76906 2.52053 7.28227 0.757084C13.1032 -1.33884 17.4611 1.03904 18.0512 6.38153C18.7443 5.53729 19.1791 4.41273 19.1791 3.13496C19.1791 2.18968 18.9731 1.6274 18.7181 1.19224C22.6412 3.16104 25 7.12308 25 12.2618C25 17.5538 22.5137 21.5925 18.4108 23.5107C12.6929 25.4795 8.43631 23.0756 7.84785 17.7836C7.20707 18.6278 6.74447 19.829 6.74447 20.9536C6.74447 22.1042 7.25775 23.382 8.15516 24.0975C3.12704 22.5377 0 18.1911 0 12.2602Z" fill="#131313"></path>
+									<path d="M44.2368 17.1147C44.2368 18.5771 42.1909 19.0406 40.5178 19.0406C38.3787 19.0406 36.6684 18.3477 36.6684 16.3835C36.6684 15.8626 36.7616 15.2461 36.9527 14.8638C35.7317 14.8973 35 15.8244 35 16.957C35 19.1697 37.6843 20.0968 40.5178 20.0968C42.9598 20.0968 45.812 19.3083 45.812 16.7467C45.812 15.3608 44.9125 14.2999 41.7015 13.607C41.1749 13.4923 40.6903 13.3967 40.2755 13.2963C37.9826 12.8328 37.1018 12.4313 37.1018 11.5616C37.1018 11.3895 37.1204 11.1792 37.1577 10.9833C36.3515 11.1745 35.713 11.7145 35.713 12.5604C35.713 13.8698 36.8408 14.3525 40.2941 15.1219C40.5551 15.1792 40.8021 15.2366 41.0817 15.2939C43.4678 15.8244 44.2368 16.1494 44.2368 17.1147ZM42.5497 7.71926C42.5497 9.1434 41.6503 10.2426 40.0891 10.2426C38.5325 10.2426 37.6284 9.1434 37.6284 7.71926C37.6284 6.29513 38.5279 5.17685 40.0891 5.17685C41.6456 5.17685 42.5497 6.29513 42.5497 7.71926ZM44.027 6.28557C44.9265 5.96538 45.8865 5.8698 46.9025 5.8698V4.0968C45.2434 4.0968 44.2414 4.90923 43.7661 5.83635C42.9831 4.71807 41.5198 4.11592 40.0844 4.11592C37.9826 4.11592 35.8202 5.40624 35.8202 7.71449C35.8202 10.061 37.9779 11.2939 40.0844 11.2939C42.1862 11.2939 44.3439 10.061 44.3439 7.71449C44.3486 7.18402 44.2321 6.70612 44.027 6.28557ZM59.0519 9.79812C59.0519 12.1494 57.6632 14.4194 55.0907 14.4194C52.4995 14.4194 51.0921 12.1494 51.0921 9.79812C51.0921 7.43253 52.4995 5.15773 55.0907 5.15773C57.6632 5.15773 59.0519 7.42775 59.0519 9.79812ZM60.8555 9.79812C60.8555 6.50541 58.3948 4.10159 55.0907 4.10159C51.7678 4.10159 49.2886 6.51019 49.2886 9.79812C49.2886 13.0717 51.7678 15.4803 55.0907 15.4803C58.3948 15.4755 60.8555 13.0717 60.8555 9.79812ZM73.7599 12.8471C73.7646 12.8423 73.7646 12.8423 73.7692 12.8375V12.7802C73.7692 12.8041 73.7646 12.8232 73.7599 12.8471ZM73.7599 12.8471C72.8418 13.6117 71.9797 13.8985 70.5769 13.8985C68.6802 13.8985 67.4964 13.2438 67.4964 10.6249V4.29274H65.9026V10.5484C65.9026 14.0323 67.7062 15.4755 70.26 15.4755C72.3898 15.4755 73.5502 14.4624 73.7599 12.8471ZM74.4077 15.2844H76.0015V4.29274H74.4077V15.2844ZM91.7954 15.2844L86.9346 9.98927C88.4166 9.74077 89.7122 9.02871 89.7122 7.17924C89.7122 4.63683 87.1024 4.29274 85.2429 4.29274H81.9947V15.2844H83.5885V5.3489H85.0705C86.5339 5.3489 88.0019 5.69776 88.0019 7.17924C88.0019 8.93313 86.4826 9.18163 85.0705 9.18163H84.3948L89.7262 15.2844H91.7954ZM105.31 15.2844H106.904V4.29274H105.478L101.386 11.2796L97.2386 4.29274H95.6821V15.2844H96.6188V6.2569L100.655 13.0526H101.312L105.31 6.35248V15.2844ZM112.879 15.2844H120.125V14.2234H114.472V10.0657H119.296V9.00481H114.472V5.3489H120.125V4.28796H112.879V15.2844ZM129.609 5.3489H133.664V4.28796H123.956V5.3489H128.011V15.2844H129.605V5.3489H129.609ZM153.997 9.79812C153.997 12.742 152.249 14.2282 149.099 14.2282H147.673V5.35367H149.099C152.249 5.34889 153.997 6.83038 153.997 9.79812ZM155.782 9.79812C155.782 5.71688 152.477 4.29274 149.099 4.29274H146.074V15.2844H149.099C152.473 15.2844 155.782 13.8602 155.782 9.79812ZM170.797 15.2844L165.936 9.98927C167.418 9.74077 168.714 9.02871 168.714 7.17924C168.714 4.63683 166.104 4.29274 164.245 4.29274H160.996V15.2844H162.59V5.3489H164.072C165.536 5.3489 166.999 5.69776 166.999 7.17924C166.999 8.93313 165.48 9.18163 164.072 9.18163H163.397L168.728 15.2844H170.797ZM174.665 15.2844H176.259V4.29274H174.665V15.2844ZM186.419 15.3608L191.261 4.28796H190.189L186.339 13.1243L182.49 4.28796H180.724L185.584 15.3608H186.419ZM197.347 14.2234V10.0657H202.17V9.00481H197.347V5.3489H203V4.28796H195.753V15.2796H203V14.2187H197.347V14.2234Z" fill="#131313"></path>
+								</svg></div>
+							<section class="restaurant-hero restaurant-hero_desktop">
 								<div class="restaurant-hero__wrapper">
 									<div class="restaurant-hero__img">
 										<picture class="picture">
@@ -825,7 +1030,7 @@
 									<div class="restaurant-hero__row restaurant-hero__row-top">
 										<div class="restaurant-hero__logo">
 											<picture class="picture restaurant-hero__logo-img">
-												<source type="image/webp" srcset="assets/images/fishbox.webp"><img class="picture__img" src="assets/images/fishbox.jpeg">
+												<source type="image/webp" srcset="assets/images/fishbox1.webp"><img class="picture__img" src="assets/images/fishbox1.jpeg">
 											</picture>
 										</div>
 									</div>
@@ -836,7 +1041,7 @@
 										<div class="restaurant-hero__buttons"><a class="restaurant-hero__button" href="menu-delivery" target="_blank">
 												<div class="restaurant-hero__button-text">Меню доставки</div>
 											</a>
-											<div class="restaurant-hero__bot">
+											<div class="restaurant-hero__bot" data-mobile="booking">
 												<div class="restaurant-hero__button restaurant-hero__button_icon">
 													<div class="restaurant-hero__button-text">Забронировать стол</div>
 													<div class="restaurant-hero__button-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -856,6 +1061,45 @@
 									</div>
 								</div>
 							</section>
+							<section class="restaurant-hero restaurant-hero_mobile">
+								<div class="restaurant-hero__wrapper">
+									<div class="restaurant-hero__img mobile">
+										<picture class="picture">
+											<source type="image/webp" srcset="assets/images/fishbox-restaurant.webp"><img class="picture__img" src="assets/images/fishbox-restaurant.jpeg">
+										</picture>
+									</div>
+									<div class="restaurant-hero__logo mobile">
+										<picture class="picture restaurant-hero__logo-img">
+											<source type="image/webp" srcset="assets/images/fishbox1.webp"><img class="picture__img" src="assets/images/fishbox1.jpeg">
+										</picture>
+									</div>
+								</div>
+								<div class="restaurant-hero__row">
+									<div class="restaurant-hero__title">Fish Box</div>
+									<div class="restaurant-hero__bot-text">
+										<div class="restaurant-hero__text">Средиземноморская</div>
+										<div class="restaurant-hero__dot">•</div>
+										<div class="restaurant-hero__text">Морепродукты</div>
+									</div>
+								</div>
+								<div class="restaurant-hero__row">
+									<div class="restaurant-hero__buttons"><a class="restaurant-hero__button restaurant-hero__button_mobile" href="menu-delivery" target="_blank">
+											<div class="restaurant-hero__button-text">Меню доставки</div>
+										</a>
+										<div class="restaurant-hero__bot" data-mobile="booking">
+											<div class="restaurant-hero__button restaurant-hero__button_icon">
+												<div class="restaurant-hero__button-text">Забронировать стол</div>
+												<div class="restaurant-hero__button-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M18.9697 22H4.96973C1.96973 22 1.96973 20.65 1.96973 19V18C1.96973 17.45 2.41973 17 2.96973 17H20.9697C21.5197 17 21.9697 17.45 21.9697 18V19C21.9697 20.65 21.9697 22 18.9697 22Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M20.7195 13V17H3.26953V13C3.26953 9.16 5.97953 5.95 9.58953 5.18C10.1295 5.06 10.6895 5 11.2695 5H12.7195C13.2995 5 13.8695 5.06 14.4095 5.18C18.0195 5.96 20.7195 9.16 20.7195 13Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M14.5 4.5C14.5 4.74 14.47 4.96 14.41 5.18C13.87 5.06 13.3 5 12.72 5H11.27C10.69 5 10.13 5.06 9.59 5.18C9.53 4.96 9.5 4.74 9.5 4.5C9.5 3.12 10.62 2 12 2C13.38 2 14.5 3.12 14.5 4.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M15 11H9" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 							<section class="restaurant-about">
 								<div class="restaurant-about__wrapper">
 									<div class="restaurant-about__col">
@@ -868,7 +1112,7 @@
 												<div class="restaurant-about__phone-number">8 916 507-00-04</div>
 											</a></div>
 									</div>
-									<div class="restaurant-about__col">
+									<div class="restaurant-about__col desktop">
 										<div class="restaurant-about__time">
 											<div class="restaurant-about__text restaurant-about__text_grey">Ежедневно</div>
 											<div class="restaurant-about__text">10:00 — 00:00</div>
@@ -876,21 +1120,39 @@
 											<div class="restaurant-about__button-text">Меню ресторана</div>
 										</a>
 									</div>
-									<div class="restaurant-about__col">
+									<div class="restaurant-about__col desktop">
 										<div class="restaurant-about__places">
 											<div class="restaurant-about__text restaurant-about__text_grey">Посадочных мест</div>
 											<div class="restaurant-about__text">80</div>
 										</div>
 									</div>
-									<div class="restaurant-about__col">
+									<div class="restaurant-about__col desktop">
 										<div class="restaurant-about__check">
 											<div class="restaurant-about__text restaurant-about__text_grey">Средний чек</div>
 											<div class="restaurant-about__text">2500-3000₽</div>
 										</div>
 									</div>
+									<div class="restaurant-about__col mobile">
+										<div class="restaurant-about__time">
+											<div class="restaurant-about__text restaurant-about__text_grey">Ежедневно</div>
+											<div class="restaurant-about__text">10:00 — 00:00</div>
+										</div>
+										<div class="restaurant-about__places">
+											<div class="restaurant-about__text restaurant-about__text_grey">Посадочных мест</div>
+											<div class="restaurant-about__text">80</div>
+										</div>
+									</div>
+									<div class="restaurant-about__col mobile mobile-bot">
+										<div class="restaurant-about__check">
+											<div class="restaurant-about__text restaurant-about__text_grey">Средний чек</div>
+											<div class="restaurant-about__text">2500-3000₽</div>
+										</div><a class="restaurant-about__button-menu" href="#" target="_blank">
+											<div class="restaurant-about__button-text">Меню ресторана</div>
+										</a>
+									</div>
 								</div>
 							</section>
-							<section class="slider-location">
+							<section class="slider-location slider-location_desktop">
 								<div class="slider-location__wrapper">
 									<div class="slider-location__col">
 										<div class="restaurant__title slider-location__title">Локация</div>
@@ -982,6 +1244,63 @@
 										</svg></div>
 								</div>
 							</section>
+							<section class="slider-location slider-location_mobile">
+								<div class="slider-location__scrollbar slider-location__scrollbar_mobile"></div>
+								<div class="slider-location__wrapper">
+									<div class="slider-location__col">
+										<div class="slider-location__text-slider">
+											<div class="swiper" data-slider-id="location-mobile" data-slider-prev="v99" data-slider-next="v100">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/slider-location1.webp"><img class="picture__img" src="assets/images/slider-location1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Локация</div>
+														<div class="slider-location__text">
+															<p>Насладиться морским пейзажем, принять солнечные ванны, попробовать авторские блюда и фирменные коктейли — все это про атмосферу ресторана Fish Box.</p>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/slider-location1.webp"><img class="picture__img" src="assets/images/slider-location1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Локация</div>
+														<div class="slider-location__text">
+															<p>Насладиться морским пейзажем, принять солнечные ванны, попробовать авторские блюда и фирменные коктейли — все это про атмосферу ресторана Fish Box.</p>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/slider-location1.webp"><img class="picture__img" src="assets/images/slider-location1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Локация</div>
+														<div class="slider-location__text">
+															<p>Насладиться морским пейзажем, принять солнечные ванны, попробовать авторские блюда и фирменные коктейли — все это про атмосферу ресторана Fish Box.</p>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/slider-location1.webp"><img class="picture__img" src="assets/images/slider-location1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Локация</div>
+														<div class="slider-location__text">
+															<p>Насладиться морским пейзажем, принять солнечные ванны, попробовать авторские блюда и фирменные коктейли — все это про атмосферу ресторана Fish Box.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 							<section class="restaurant-banquet banquet">
 								<div class="banquet-wrapper banquet__wrapper">
 									<div class="banquet__title">Банкет</div>
@@ -1036,7 +1355,7 @@
 													<div class="banquet__cards-text">VIP-комната</div>
 												</div>
 											</div>
-											<div class="banquet__button banquet__button_serv">
+											<div class="banquet__button banquet__button_serv desktop" data-fancy-button="k2">
 												<div class="banquet__button-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M18.9697 22H4.96973C1.96973 22 1.96973 20.65 1.96973 19V18C1.96973 17.45 2.41973 17 2.96973 17H20.9697C21.5197 17 21.9697 17.45 21.9697 18V19C21.9697 20.65 21.9697 22 18.9697 22Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M20.7195 13V17H3.26953V13C3.26953 9.16 5.97953 5.95 9.58953 5.18C10.1295 5.06 10.6895 5 11.2695 5H12.7195C13.2995 5 13.8695 5.06 14.4095 5.18C18.0195 5.96 20.7195 9.16 20.7195 13Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1065,14 +1384,23 @@
 													<div class="banquet__text">5 000₽</div>
 												</div>
 											</div>
-											<div class="banquet__button banquet__button_conditions">
+											<div class="banquet__button banquet__button_conditions" data-fancy-button="req">
 												<div class="banquet__button-text">Все условия</div>
+											</div>
+											<div class="banquet__button banquet__button_serv mobile" data-fancy-button="k2">
+												<div class="banquet__button-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M18.9697 22H4.96973C1.96973 22 1.96973 20.65 1.96973 19V18C1.96973 17.45 2.41973 17 2.96973 17H20.9697C21.5197 17 21.9697 17.45 21.9697 18V19C21.9697 20.65 21.9697 22 18.9697 22Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M20.7195 13V17H3.26953V13C3.26953 9.16 5.97953 5.95 9.58953 5.18C10.1295 5.06 10.6895 5 11.2695 5H12.7195C13.2995 5 13.8695 5.06 14.4095 5.18C18.0195 5.96 20.7195 9.16 20.7195 13Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M14.5 4.5C14.5 4.74 14.47 4.96 14.41 5.18C13.87 5.06 13.3 5 12.72 5H11.27C10.69 5 10.13 5.06 9.59 5.18C9.53 4.96 9.5 4.74 9.5 4.5C9.5 3.12 10.62 2 12 2C13.38 2 14.5 3.12 14.5 4.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M15 11H9" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="banquet__button-text">Забронировать банкет</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</section>
-							<section class="slider-location slider-location_chef">
+							<section class="slider-location slider-location_chef desktop">
 								<div class="slider-location__wrapper">
 									<div class="slider-location__col">
 										<div class="restaurant__title slider-location__title slider-location__title_chef">Шефы ресторана</div>
@@ -1176,6 +1504,76 @@
 										</svg></div>
 								</div>
 							</section>
+							<section class="slider-location slider-location_chef mobile">
+								<div class="slider-location__wrapper">
+									<div class="slider-location__col">
+										<div class="restaurant__title slider-location__title slider-location__title_chef">Шефы ресторана</div>
+										<div class="slider-location__scrollbar_chef slider-location__mobile-scroll_chief"></div>
+										<div class="slider-location__text-slider slider-location__text-slider_chef">
+											<div class="swiper" data-slider-id="location-chief-mobile" data-slider-prev="v99" data-slider-next="v100">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/chef1.webp"><img class="picture__img" src="assets/images/chef1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Рустам Тангиров</div>
+														<div class="slider-location__text">
+															<p>В послужном списке Рустама Тангирова работа в лучших гастрономических ресторанах: от самого высокого ресторана Европы Sixty до небольшого ресторанчика Saimaa Life Gastrocafe в Финляндии ...</p>
+														</div>
+														<div class="slider-location__slide-button slider-location__chief-modal_mobile" data-fancy-button="chef" fancy-button>
+															<div class="slider-location__btn-text">Подробнее о шефе</div>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/chef1.webp"><img class="picture__img" src="assets/images/chef1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Рустам Тангиров</div>
+														<div class="slider-location__text">
+															<p>В послужном списке Рустама Тангирова работа в лучших гастрономических ресторанах: от самого высокого ресторана Европы Sixty до небольшого ресторанчика Saimaa Life Gastrocafe в Финляндии ...</p>
+														</div>
+														<div class="slider-location__slide-button slider-location__chief-modal_mobile" data-fancy-button="chef" fancy-button>
+															<div class="slider-location__btn-text">Подробнее о шефе</div>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/chef1.webp"><img class="picture__img" src="assets/images/chef1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Рустам Тангиров</div>
+														<div class="slider-location__text">
+															<p>В послужном списке Рустама Тангирова работа в лучших гастрономических ресторанах: от самого высокого ресторана Европы Sixty до небольшого ресторанчика Saimaa Life Gastrocafe в Финляндии ...</p>
+														</div>
+														<div class="slider-location__slide-button slider-location__chief-modal_mobile" data-fancy-button="chef" fancy-button>
+															<div class="slider-location__btn-text">Подробнее о шефе</div>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="slider-location__slide-img">
+															<picture class="picture">
+																<source type="image/webp" srcset="assets/images/chef1.webp"><img class="picture__img" src="assets/images/chef1.jpeg">
+															</picture>
+														</div>
+														<div class="slider-location__title">Рустам Тангиров</div>
+														<div class="slider-location__text">
+															<p>В послужном списке Рустама Тангирова работа в лучших гастрономических ресторанах: от самого высокого ресторана Европы Sixty до небольшого ресторанчика Saimaa Life Gastrocafe в Финляндии ...</p>
+														</div>
+														<div class="slider-location__slide-button slider-location__chief-modal_mobile" data-fancy-button="chef" fancy-button>
+															<div class="slider-location__btn-text">Подробнее о шефе</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 							<footer class="footer">
 								<div class="footer__wrapper">
 									<div class="footer__inner">
@@ -1192,7 +1590,7 @@
 															</svg></div>
 														<div class="footer-media__text">Вконтакте</div>
 													</a></div>
-												<div class="footer__copy">
+												<div class="footer__copy footer__copy_desktop">
 													<div class="footer__copy-text">© 2022 Gourmet Drive</div>
 												</div>
 											</div>
@@ -1274,6 +1672,9 @@
 													<div class="footer-policy__author">
 														<div class="footer-policy__link" href="#">Сделано в <a href="#" target="_blank"><span>CloudMill</span></a></div>
 													</div>
+													<div class="footer__copy footer__copy_mobile">
+														<div class="footer__copy-text">© 2022 Gourmet Drive</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -1302,6 +1703,168 @@
 						<div class="grid-test__col"></div>
 						<div class="grid-test__col"></div>
 						<div class="grid-test__col"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-menu menu">
+			<div class="container">
+				<div class="menu__inner">
+					<div class="menu__row-top"><svg class="menu-svg" width="203" height="25" viewBox="0 0 203 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.05093 12.49C8.05054 13.0018 7.4866 14.0497 7.4866 14.8923C7.4866 17.0404 9.17844 17.6793 13.1539 18.8299C16.1795 19.6986 17.9744 20.1077 17.9744 22.8686C18.7181 22.409 19.7185 21.3855 19.7185 19.9284C19.7185 18.0118 18.3078 16.7324 14.0267 15.6583C9.48575 14.511 9.05093 14.2551 9.05093 12.49ZM13.0509 3.79829C14.6152 4.97338 15.0517 6.78898 15.0517 8.29817C15.0517 9.83181 14.6414 11.6474 13.0509 12.7459C16.0259 12.49 17.8714 10.8293 17.8714 8.29817C17.8714 5.84369 16.0243 4.08025 13.0509 3.79829ZM11.9998 3.82437C9.05093 4.10632 7.17929 5.86977 7.17929 8.29817C7.17929 10.7266 9.02478 12.4916 12.026 12.772C10.4109 11.6213 10.0007 9.80574 10.0007 8.29817C9.99902 6.79061 10.4093 4.92285 11.9998 3.82437ZM0 12.2602C0 6.71238 2.76906 2.52053 7.28227 0.757084C13.1032 -1.33884 17.4611 1.03904 18.0512 6.38153C18.7443 5.53729 19.1791 4.41273 19.1791 3.13496C19.1791 2.18968 18.9731 1.6274 18.7181 1.19224C22.6412 3.16104 25 7.12308 25 12.2618C25 17.5538 22.5137 21.5925 18.4108 23.5107C12.6929 25.4795 8.43631 23.0756 7.84785 17.7836C7.20707 18.6278 6.74447 19.829 6.74447 20.9536C6.74447 22.1042 7.25775 23.382 8.15516 24.0975C3.12704 22.5377 0 18.1911 0 12.2602Z" fill="#131313"></path>
+							<path d="M44.2368 17.1147C44.2368 18.5771 42.1909 19.0406 40.5178 19.0406C38.3787 19.0406 36.6684 18.3477 36.6684 16.3835C36.6684 15.8626 36.7616 15.2461 36.9527 14.8638C35.7317 14.8973 35 15.8244 35 16.957C35 19.1697 37.6843 20.0968 40.5178 20.0968C42.9598 20.0968 45.812 19.3083 45.812 16.7467C45.812 15.3608 44.9125 14.2999 41.7015 13.607C41.1749 13.4923 40.6903 13.3967 40.2755 13.2963C37.9826 12.8328 37.1018 12.4313 37.1018 11.5616C37.1018 11.3895 37.1204 11.1792 37.1577 10.9833C36.3515 11.1745 35.713 11.7145 35.713 12.5604C35.713 13.8698 36.8408 14.3525 40.2941 15.1219C40.5551 15.1792 40.8021 15.2366 41.0817 15.2939C43.4678 15.8244 44.2368 16.1494 44.2368 17.1147ZM42.5497 7.71926C42.5497 9.1434 41.6503 10.2426 40.0891 10.2426C38.5325 10.2426 37.6284 9.1434 37.6284 7.71926C37.6284 6.29513 38.5279 5.17685 40.0891 5.17685C41.6456 5.17685 42.5497 6.29513 42.5497 7.71926ZM44.027 6.28557C44.9265 5.96538 45.8865 5.8698 46.9025 5.8698V4.0968C45.2434 4.0968 44.2414 4.90923 43.7661 5.83635C42.9831 4.71807 41.5198 4.11592 40.0844 4.11592C37.9826 4.11592 35.8202 5.40624 35.8202 7.71449C35.8202 10.061 37.9779 11.2939 40.0844 11.2939C42.1862 11.2939 44.3439 10.061 44.3439 7.71449C44.3486 7.18402 44.2321 6.70612 44.027 6.28557ZM59.0519 9.79812C59.0519 12.1494 57.6632 14.4194 55.0907 14.4194C52.4995 14.4194 51.0921 12.1494 51.0921 9.79812C51.0921 7.43253 52.4995 5.15773 55.0907 5.15773C57.6632 5.15773 59.0519 7.42775 59.0519 9.79812ZM60.8555 9.79812C60.8555 6.50541 58.3948 4.10159 55.0907 4.10159C51.7678 4.10159 49.2886 6.51019 49.2886 9.79812C49.2886 13.0717 51.7678 15.4803 55.0907 15.4803C58.3948 15.4755 60.8555 13.0717 60.8555 9.79812ZM73.7599 12.8471C73.7646 12.8423 73.7646 12.8423 73.7692 12.8375V12.7802C73.7692 12.8041 73.7646 12.8232 73.7599 12.8471ZM73.7599 12.8471C72.8418 13.6117 71.9797 13.8985 70.5769 13.8985C68.6802 13.8985 67.4964 13.2438 67.4964 10.6249V4.29274H65.9026V10.5484C65.9026 14.0323 67.7062 15.4755 70.26 15.4755C72.3898 15.4755 73.5502 14.4624 73.7599 12.8471ZM74.4077 15.2844H76.0015V4.29274H74.4077V15.2844ZM91.7954 15.2844L86.9346 9.98927C88.4166 9.74077 89.7122 9.02871 89.7122 7.17924C89.7122 4.63683 87.1024 4.29274 85.2429 4.29274H81.9947V15.2844H83.5885V5.3489H85.0705C86.5339 5.3489 88.0019 5.69776 88.0019 7.17924C88.0019 8.93313 86.4826 9.18163 85.0705 9.18163H84.3948L89.7262 15.2844H91.7954ZM105.31 15.2844H106.904V4.29274H105.478L101.386 11.2796L97.2386 4.29274H95.6821V15.2844H96.6188V6.2569L100.655 13.0526H101.312L105.31 6.35248V15.2844ZM112.879 15.2844H120.125V14.2234H114.472V10.0657H119.296V9.00481H114.472V5.3489H120.125V4.28796H112.879V15.2844ZM129.609 5.3489H133.664V4.28796H123.956V5.3489H128.011V15.2844H129.605V5.3489H129.609ZM153.997 9.79812C153.997 12.742 152.249 14.2282 149.099 14.2282H147.673V5.35367H149.099C152.249 5.34889 153.997 6.83038 153.997 9.79812ZM155.782 9.79812C155.782 5.71688 152.477 4.29274 149.099 4.29274H146.074V15.2844H149.099C152.473 15.2844 155.782 13.8602 155.782 9.79812ZM170.797 15.2844L165.936 9.98927C167.418 9.74077 168.714 9.02871 168.714 7.17924C168.714 4.63683 166.104 4.29274 164.245 4.29274H160.996V15.2844H162.59V5.3489H164.072C165.536 5.3489 166.999 5.69776 166.999 7.17924C166.999 8.93313 165.48 9.18163 164.072 9.18163H163.397L168.728 15.2844H170.797ZM174.665 15.2844H176.259V4.29274H174.665V15.2844ZM186.419 15.3608L191.261 4.28796H190.189L186.339 13.1243L182.49 4.28796H180.724L185.584 15.3608H186.419ZM197.347 14.2234V10.0657H202.17V9.00481H197.347V5.3489H203V4.28796H195.753V15.2796H203V14.2187H197.347V14.2234Z" fill="#131313"></path>
+						</svg>
+						<div class="close menu__close" data-close="mobile-menu"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+					</div>
+					<div class="menu__row-links"><a class="menu__phone" href="tel:84994555595"><svg class="menu__phone-svg" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.3084 15.775C18.3084 16.075 18.2417 16.3833 18.1 16.6833C17.9584 16.9833 17.775 17.2666 17.5334 17.5333C17.125 17.9833 16.675 18.3083 16.1667 18.5166C15.6667 18.725 15.125 18.8333 14.5417 18.8333C13.6917 18.8333 12.7834 18.6333 11.825 18.225C10.8667 17.8166 9.90835 17.2666 8.95835 16.575C8.00002 15.875 7.09169 15.1 6.22502 14.2416C5.36669 13.375 4.59169 12.4666 3.90002 11.5166C3.21669 10.5666 2.66669 9.61663 2.26669 8.67496C1.86669 7.72496 1.66669 6.81663 1.66669 5.94996C1.66669 5.38329 1.76669 4.84163 1.96669 4.34163C2.16669 3.83329 2.48335 3.36663 2.92502 2.94996C3.45835 2.42496 4.04169 2.16663 4.65835 2.16663C4.89169 2.16663 5.12502 2.21663 5.33335 2.31663C5.55002 2.41663 5.74169 2.56663 5.89169 2.78329L7.82502 5.50829C7.97502 5.71663 8.08335 5.90829 8.15835 6.09163C8.23335 6.26663 8.27502 6.44163 8.27502 6.59996C8.27502 6.79996 8.21669 6.99996 8.10002 7.19163C7.99169 7.38329 7.83335 7.58329 7.63335 7.78329L7.00002 8.44163C6.90835 8.53329 6.86669 8.64163 6.86669 8.77496C6.86669 8.84163 6.87502 8.89996 6.89169 8.96663C6.91669 9.03329 6.94169 9.08329 6.95835 9.13329C7.10835 9.40829 7.36669 9.76663 7.73335 10.2C8.10835 10.6333 8.50835 11.075 8.94169 11.5166C9.39169 11.9583 9.82502 12.3666 10.2667 12.7416C10.7 13.1083 11.0584 13.3583 11.3417 13.5083C11.3834 13.525 11.4334 13.55 11.4917 13.575C11.5584 13.6 11.625 13.6083 11.7 13.6083C11.8417 13.6083 11.95 13.5583 12.0417 13.4666L12.675 12.8416C12.8834 12.6333 13.0834 12.475 13.275 12.375C13.4667 12.2583 13.6584 12.2 13.8667 12.2C14.025 12.2 14.1917 12.2333 14.375 12.3083C14.5584 12.3833 14.75 12.4916 14.9584 12.6333L17.7167 14.5916C17.9334 14.7416 18.0834 14.9166 18.175 15.125C18.2584 15.3333 18.3084 15.5416 18.3084 15.775Z" stroke="#131313" stroke-width="1.3" stroke-miterlimit="10"></path>
+								<path d="M16.6667 3.83325H12.6667M16.6667 3.83325V7.83325V3.83325Z" stroke="#131313" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<p>8 499 455-55-95</p>
+						</a>
+						<p class="menu__text">Доставляем с 10 до 22</p><a class="menu__booking" data-mobile="booking"><span>Забронировать стол</span><svg class="sidebar-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.9697 22H4.96973C1.96973 22 1.96973 20.65 1.96973 19V18C1.96973 17.45 2.41973 17 2.96973 17H20.9697C21.5197 17 21.9697 17.45 21.9697 18V19C21.9697 20.65 21.9697 22 18.9697 22Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M20.7195 13V17H3.26953V13C3.26953 9.16 5.97953 5.95 9.58953 5.18C10.1295 5.06 10.6895 5 11.2695 5H12.7195C13.2995 5 13.8695 5.06 14.4095 5.18C18.0195 5.96 20.7195 9.16 20.7195 13Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M14.5 4.5C14.5 4.74 14.47 4.96 14.41 5.18C13.87 5.06 13.3 5 12.72 5H11.27C10.69 5 10.13 5.06 9.59 5.18C9.53 4.96 9.5 4.74 9.5 4.5C9.5 3.12 10.62 2 12 2C13.38 2 14.5 3.12 14.5 4.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M15 11H9" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></a>
+					</div>
+					<div class="menu__row-restaurants">
+						<div class="restaurants">
+							<h2 class="restaurants__title">Рестораны</h2>
+						</div>
+						<div class="restaurants__items">
+							<div class="restaurants__item">
+								<div class="restaurants__item-img">
+									<picture class="picture">
+										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+									</picture>
+								</div>
+								<div class="col">
+									<h3 class="restaurants__item-title">Fish Box</h3>
+									<div class="restaurants__item-buttons"><button class="restaurants__item-button_green">Меню доставки</button><button class="restaurants__item-button_white">i</button></div>
+								</div>
+							</div>
+							<div class="restaurants__item">
+								<div class="restaurants__item-img">
+									<picture class="picture">
+										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+									</picture>
+								</div>
+								<div class="col">
+									<h3 class="restaurants__item-title">Fish Box</h3>
+									<div class="restaurants__item-buttons"><button class="restaurants__item-button_green">Меню доставки</button><button class="restaurants__item-button_white">i</button></div>
+								</div>
+							</div>
+							<div class="restaurants__item">
+								<div class="restaurants__item-img">
+									<picture class="picture">
+										<source type="image/webp" srcset="assets/images/restaurants__list-1.webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg">
+									</picture>
+								</div>
+								<div class="col">
+									<h3 class="restaurants__item-title">Fish Box</h3>
+									<div class="restaurants__item-buttons"><button class="restaurants__item-button_green">Меню доставки</button><button class="restaurants__item-button_white">i</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu__row-delivery">
+						<div class="row"><a class="menu__link">Доставка</a></div>
+						<div class="row"><a class="menu__link">Самовывоз</a></div>
+					</div>
+					<div class="menu__banner">
+						<h3 class="menu__banner-title">Мобильное приложение Gourmet Drive</h3>
+						<p class="menu__banner-text">Скачайте приложение, чтобы любимые блюда были всегда под рукой</p>
+						<div class="menu__banner-buttons"><a class="banner__btn" href="#" target="_blank"><svg class="banner__btn-apple" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.4321 10.1412C16.967 10.9413 16.7167 11.8433 16.7046 12.7631C16.7057 13.7979 17.0188 14.8094 17.6048 15.6716C18.1908 16.5338 19.0238 17.2086 20 17.6116C19.6162 18.8289 19.0377 19.9792 18.2859 21.02C17.2762 22.4945 16.2177 23.9351 14.5374 23.9617C12.9048 23.9985 12.3562 23.0237 10.4836 23.0237C8.5934 23.0237 8.00864 23.9351 6.44287 23.9985C4.84268 24.0564 3.61987 22.4248 2.5735 20.964C0.482019 17.981 -1.14651 12.5574 1.03675 8.86688C1.54078 7.98265 2.27083 7.24097 3.15575 6.7141C4.04067 6.18723 5.0503 5.89314 6.08626 5.86048C7.68781 5.8283 9.17511 6.91644 10.1597 6.91644C11.1258 6.91644 12.9635 5.61471 14.8593 5.80901C15.7479 5.83617 16.6179 6.06526 17.4 6.47807C18.1821 6.89087 18.8548 7.47604 19.3648 8.18708C18.5621 8.66891 17.8972 9.34113 17.4321 10.1412Z" fill="white"></path>
+									<path d="M14.879 0C14.9883 1.39334 14.537 2.7734 13.6209 3.84711C13.1822 4.37981 12.6254 4.80838 11.9925 5.10055C11.3596 5.39271 10.667 5.54085 9.96692 5.53381C9.92225 4.86376 10.0133 4.19169 10.2348 3.55601C10.4564 2.92033 10.804 2.33351 11.258 1.8291C12.1865 0.796591 13.4794 0.143516 14.879 0Z" fill="white"></path>
+								</svg>
+								<p>App Store</p>
+							</a><a class="banner__btn" href="#" target="_blank"><svg class="banner__btn-google" width="23" height="26" viewBox="0 0 23 26" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.516135 1.35221C0.192927 1.64429 0 2.13146 0 2.77814V2.63195V23.9714V23.8309C0 24.4281 0.165484 24.8893 0.445727 25.1863L0.517262 25.2549V25.2552C0.744092 25.4602 1.03496 25.5691 1.36831 25.5687C1.69403 25.5687 2.06051 25.4647 2.44727 25.2451L16.427 17.2892L21.2289 14.5561C21.8388 14.2091 22.1812 13.7614 22.2384 13.3054V13.3036C22.1812 12.8465 21.8388 12.3992 21.229 12.0521L16.4266 9.31937L2.44732 1.36348C2.05973 1.14346 1.69299 1.03906 1.3664 1.03906C1.03344 1.03906 0.742965 1.14758 0.516221 1.35221H0.516135Z" fill="#00C1FF"></path>
+									<path d="M0.517305 25.2559L0.445727 25.1873C0.165484 24.8903 0 24.429 0 23.8318V23.9724V2.63818V2.77909C0 2.13241 0.192927 1.64524 0.516135 1.35316L12.4489 13.3049L0.517305 25.2559Z" fill="url(#paint0_linear_414_28020)"></path>
+									<path d="M16.4273 17.2891L12.4492 13.3038L16.427 9.31926L21.2293 12.052C21.8391 12.3991 22.1815 12.8464 22.2387 13.3034V13.3053C22.1815 13.7613 21.8391 14.209 21.2293 14.556L16.4274 17.289" fill="url(#paint1_linear_414_28020)"></path>
+									<path d="M1.36854 25.5703C1.03523 25.5706 0.744365 25.4617 0.517578 25.2567V25.2564L12.4492 13.3055L16.4273 17.2907L2.4475 25.2466C2.06074 25.4663 1.69426 25.5703 1.36854 25.5703Z" fill="url(#paint2_linear_414_28020)"></path>
+									<path d="M12.4484 13.3047L0.515625 1.35295C0.742455 1.14832 1.03293 1.0398 1.36585 1.0398C1.69244 1.0398 2.05922 1.14415 2.44676 1.36422L16.4261 9.32011L12.4484 13.3047" fill="url(#paint3_linear_414_28020)"></path>
+									<path d="M1.3682 25.7109C1.03489 25.7109 0.743634 25.602 0.516804 25.3971L0.516414 25.3974C0.51548 25.3965 0.514481 25.3956 0.513422 25.3948L0.451382 25.3341C0.449431 25.3322 0.44761 25.33 0.445312 25.3278L0.516847 25.2561C0.743678 25.4611 1.0345 25.57 1.3679 25.5696C1.69357 25.5696 2.06005 25.4656 2.44681 25.246L16.4265 17.2901L16.5161 17.3798L16.4254 17.4314L2.44677 25.3869C2.0943 25.587 1.75904 25.6913 1.45621 25.7087C1.42689 25.7102 1.39755 25.7109 1.3682 25.7109" fill="url(#paint4_linear_414_28020)"></path>
+									<path d="M0.445727 25.3281C0.165484 25.0311 0 24.5703 0 23.9727V23.8321C0 24.4293 0.165484 24.8905 0.445727 25.1876L0.517262 25.2562L0.445727 25.3281" fill="url(#paint5_linear_414_28020)"></path>
+									<path d="M16.5173 17.3789L16.4277 17.2891L21.2297 14.5561C21.8395 14.2091 22.1819 13.7614 22.2391 13.3054C22.2391 13.4727 22.2019 13.64 22.1278 13.8029C21.9784 14.1311 21.679 14.4412 21.2297 14.697L16.5173 17.3789" fill="url(#paint6_linear_414_28020)"></path>
+									<path d="M22.2376 13.3047C22.1803 12.8476 21.838 12.4003 21.2282 12.0532L16.4258 9.3205L16.5154 9.23076H16.5157L21.2282 11.9127C21.9005 12.2955 22.2372 12.8 22.2376 13.3047" fill="url(#paint7_linear_414_28020)"></path>
+									<path d="M0 2.7793V2.63189C0 2.57874 0.0014307 2.52676 0.00416203 2.47629V2.47399C0.00416203 2.4733 0.00416203 2.47256 0.00442215 2.47178V2.4661C0.0334263 1.9517 0.192927 1.55046 0.445727 1.28253L0.516135 1.35333C0.192927 1.64545 0 2.13262 0 2.7793Z" fill="url(#paint8_linear_414_28020)"></path>
+									<path d="M16.4262 9.32031L2.44681 1.36434C2.05927 1.14431 1.69253 1.03996 1.36594 1.03996C1.03298 1.03996 0.742507 1.14847 0.51572 1.35311L0.445312 1.28227C0.4673 1.25895 0.490149 1.23646 0.513813 1.21485C0.51455 1.21407 0.51572 1.21329 0.516457 1.21255C0.741467 1.00948 1.02886 0.900964 1.35883 0.899013H1.36594C1.69253 0.899013 2.05927 1.00341 2.44681 1.22352L16.5161 9.23027L16.5157 9.23057L16.4262 9.32031" fill="url(#paint9_linear_414_28020)"></path>
+									<defs>
+										<lineargradient id="paint0_linear_414_28020" x1="7.62575" y1="2.4127" x2="-2.65761" y2="12.7126" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#00A0FF"></stop>
+											<stop offset="0.00657" stop-color="#00A1FF"></stop>
+											<stop offset="0.2601" stop-color="#00BEFF"></stop>
+											<stop offset="0.5122" stop-color="#00D2FF"></stop>
+											<stop offset="0.7604" stop-color="#00DFFF"></stop>
+											<stop offset="1" stop-color="#00E3FF"></stop>
+										</lineargradient>
+										<lineargradient id="paint1_linear_414_28020" x1="22.9818" y1="13.235" x2="-0.322591" y2="13.235" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFE000"></stop>
+											<stop offset="0.4087" stop-color="#FFBD00"></stop>
+											<stop offset="0.7754" stop-color="#FFA500"></stop>
+											<stop offset="1" stop-color="#FF9C00"></stop>
+										</lineargradient>
+										<lineargradient id="paint2_linear_414_28020" x1="14.3152" y1="17.0945" x2="-3.11067" y2="34.421" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FF3A44"></stop>
+											<stop offset="1" stop-color="#C31162"></stop>
+										</lineargradient>
+										<lineargradient id="paint3_linear_414_28020" x1="-2.55979" y1="-0.418954" x2="5.20655" y2="7.31496" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#32A071"></stop>
+											<stop offset="0.0685" stop-color="#2DA771"></stop>
+											<stop offset="0.4762" stop-color="#15CF74"></stop>
+											<stop offset="0.8009" stop-color="#06E775"></stop>
+											<stop offset="1" stop-color="#00F076"></stop>
+										</lineargradient>
+										<lineargradient id="paint4_linear_414_28020" x1="14.3059" y1="19.8582" x2="0.350309" y2="33.8363" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#CC2E36"></stop>
+											<stop offset="1" stop-color="#9C0E4E"></stop>
+										</lineargradient>
+										<lineargradient id="paint5_linear_414_28020" x1="1.58962" y1="2.41297" x2="-7.46987" y2="11.4872" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#008DE0"></stop>
+											<stop offset="0.00657" stop-color="#008DE0"></stop>
+											<stop offset="0.2601" stop-color="#00A7E0"></stop>
+											<stop offset="0.5122" stop-color="#00B8E0"></stop>
+											<stop offset="0.7604" stop-color="#00C4E0"></stop>
+											<stop offset="1" stop-color="#00C7E0"></stop>
+										</lineargradient>
+										<lineargradient id="paint6_linear_414_28020" x1="22.9822" y1="13.3045" x2="-0.32221" y2="13.3045" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#E0C500"></stop>
+											<stop offset="0.4087" stop-color="#E0A600"></stop>
+											<stop offset="0.7754" stop-color="#E09100"></stop>
+											<stop offset="1" stop-color="#E08900"></stop>
+										</lineargradient>
+										<lineargradient id="paint7_linear_414_28020" x1="22.9806" y1="13.3056" x2="-0.323701" y2="13.3056" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFE840"></stop>
+											<stop offset="0.4087" stop-color="#FFCE40"></stop>
+											<stop offset="0.7754" stop-color="#FFBC40"></stop>
+											<stop offset="1" stop-color="#FFB540"></stop>
+										</lineargradient>
+										<lineargradient id="paint8_linear_414_28020" x1="1.57979" y1="2.4293" x2="-7.1461" y2="10.7906" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#40B8FF"></stop>
+											<stop offset="0.00657" stop-color="#40B9FF"></stop>
+											<stop offset="0.2601" stop-color="#40CEFF"></stop>
+											<stop offset="0.5122" stop-color="#40DDFF"></stop>
+											<stop offset="0.7604" stop-color="#40E7FF"></stop>
+											<stop offset="1" stop-color="#40EAFF"></stop>
+										</lineargradient>
+										<lineargradient id="paint9_linear_414_28020" x1="-2.57713" y1="2.10877" x2="3.65465" y2="8.35068" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#65B895"></stop>
+											<stop offset="0.0685" stop-color="#62BD95"></stop>
+											<stop offset="0.4762" stop-color="#50DB97"></stop>
+											<stop offset="0.8009" stop-color="#44ED98"></stop>
+											<stop offset="1" stop-color="#40F498"></stop>
+										</lineargradient>
+									</defs>
+								</svg>
+								<p>Google Play</p>
+							</a></div>
 					</div>
 				</div>
 			</div>
