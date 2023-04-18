@@ -15,6 +15,43 @@
 		<div class="wrapper">
 			<main class="main main--alt">
 				<div class="container">
+					<div class="modal-card checkout-modal-card" data-fancy-modal="delivery-map">
+						<div class="close modal-card__close" data-fancybox-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+						<h2 class="modal-card__title">Укажите адрес доставки</h2>
+						<div class="modal-card__row-top">
+							<form class="modal-card__form" action="#">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Улица,дом</div><input class="input modal-card__form-street" data-input="" required placeholder="Улица,дом"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Подъезд</div><input class="input" data-input="" required placeholder="Подъезд"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Этаж</div><input class="input" data-input="" required placeholder="Этаж"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Домофон</div><input class="input" data-input="" required placeholder="Домофон"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Квартира</div><input class="input" data-input="" required placeholder="Квартира"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div><button class="modal-card__form-btn">Подтвердить адрес</button>
+							</form>
+						</div>
+						<div class="modal-card__row-card">//Карта</div>
+					</div>
 					<div class="checkout-header mobile">
 						<div class="checkout-header__wrapper"><a class="checkout-header__button" href="#">
 								<div class="checkout-header__button-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,6 +74,11 @@
 										<path d="M10.3155 14.1489C10.3155 15.7383 8.03071 16.2421 6.16225 16.2421C3.77334 16.2421 1.86325 15.4889 1.86325 13.3541C1.86325 12.788 1.96734 12.1179 2.18073 11.7024C0.817123 11.7388 0 12.7464 0 13.9774C0 16.3823 2.99785 17.39 6.16225 17.39C8.88947 17.39 12.0747 16.533 12.0747 13.7489C12.0747 12.2426 11.0702 11.0895 7.48422 10.3364C6.8961 10.2117 6.35482 10.1078 5.89161 9.99873C3.33095 9.49489 2.34728 9.05859 2.34728 8.11326C2.34728 7.92627 2.3681 7.69772 2.40973 7.48476C1.50934 7.69253 0.796305 8.27947 0.796305 9.19883C0.796305 10.622 2.05582 11.1466 5.91243 11.9829C6.20389 12.0452 6.47973 12.1076 6.79201 12.1699C9.45677 12.7464 10.3155 13.0996 10.3155 14.1489ZM8.43146 3.93716C8.43146 5.48502 7.42697 6.67967 5.68343 6.67967C3.94509 6.67967 2.9354 5.48502 2.9354 3.93716C2.9354 2.38931 3.93989 1.17388 5.68343 1.17388C7.42177 1.17388 8.43146 2.38931 8.43146 3.93716ZM10.0813 2.37892C11.0858 2.03091 12.158 1.92703 13.2926 1.92703V0C11.4397 0 10.3207 0.883004 9.78986 1.89067C8.91549 0.675238 7.28124 0.020781 5.67822 0.020781C3.33095 0.020781 0.91601 1.4232 0.91601 3.93197C0.91601 6.4823 3.32574 7.82238 5.67822 7.82238C8.0255 7.82238 10.4352 6.4823 10.4352 3.93197C10.4404 3.35542 10.3103 2.836 10.0813 2.37892ZM26.861 6.19662C26.861 8.75214 25.31 11.2194 22.4371 11.2194C19.5433 11.2194 17.9715 8.75214 17.9715 6.19662C17.9715 3.62552 19.5433 1.1531 22.4371 1.1531C25.31 1.1531 26.861 3.62032 26.861 6.19662ZM28.8751 6.19662C28.8751 2.61785 26.1271 0.00519922 22.4371 0.00519922C18.7262 0.00519922 15.9573 2.62305 15.9573 6.19662C15.9573 9.75461 18.7262 12.3725 22.4371 12.3725C26.1271 12.3673 28.8751 9.75461 28.8751 6.19662ZM43.2867 9.51048C43.2919 9.50528 43.2919 9.50529 43.2971 9.50009V9.43776C43.2971 9.46373 43.2919 9.4845 43.2867 9.51048ZM43.2867 9.51048C42.2614 10.3415 41.2985 10.6532 39.732 10.6532C37.6137 10.6532 36.2917 9.94159 36.2917 7.0952V0.212962H34.5117V7.01209C34.5117 10.7986 36.5259 12.3673 39.378 12.3673C41.7565 12.3673 43.0525 11.2661 43.2867 9.51048ZM44.0101 12.1595H45.7901V0.212962H44.0101V12.1595ZM63.4285 12.1595L58.0001 6.40438C59.6552 6.13428 61.1021 5.36036 61.1021 3.35023C61.1021 0.586944 58.1875 0.212962 56.1108 0.212962H52.4832V12.1595H54.2632V1.36087H55.9183C57.5525 1.36087 59.192 1.74004 59.192 3.35023C59.192 5.25648 57.4953 5.52657 55.9183 5.52657H55.1636L61.1177 12.1595H63.4285ZM78.5219 12.1595H80.3018V0.212962H78.7092L74.1396 7.8068L69.5075 0.212962H67.7692V12.1595H68.8153V2.34776L73.3225 9.73383H74.0563L78.5219 2.45164V12.1595ZM86.9742 12.1595H95.0673V11.0064H88.7541V6.48749H94.1409V5.33439H88.7541V1.36087H95.0673V0.20777H86.9742V12.1595ZM105.659 1.36087H110.187V0.20777H99.3455V1.36087H103.874V12.1595H105.653V1.36087H105.659ZM132.894 6.19662C132.894 9.39621 130.943 11.0116 127.424 11.0116H125.832V1.36606H127.424C130.943 1.36087 132.894 2.97105 132.894 6.19662ZM134.888 6.19662C134.888 1.76082 131.198 0.212962 127.424 0.212962H124.047V12.1595H127.424C131.192 12.1595 134.888 10.6116 134.888 6.19662ZM151.657 12.1595L146.229 6.40438C147.884 6.13428 149.331 5.36036 149.331 3.35023C149.331 0.586944 146.416 0.212962 144.339 0.212962H140.712V12.1595H142.492V1.36087H144.147C145.781 1.36087 147.415 1.74004 147.415 3.35023C147.415 5.25648 145.719 5.52657 144.147 5.52657H143.392L149.346 12.1595H151.657ZM155.977 12.1595H157.757V0.212962H155.977V12.1595ZM169.103 12.2426L174.51 0.20777H173.313L169.014 9.81174L164.715 0.20777H162.743L168.171 12.2426H169.103ZM181.308 11.0064V6.48749H186.694V5.33439H181.308V1.36087H187.621V0.20777H179.528V12.1543H187.621V11.0012H181.308V11.0064Z" fill="#131313"></path>
 									</svg></div>
 							</div>
+						</div>
+						<div class="checkout-submit__mobile"><button class="checkout-results__submit">Оформить заказ</button>
+							<div class="checkout-results__plug checkout-results__plug_grey">Недостаточная сумма заказа</div>
+							<div class="checkout-results__min-sum">Минимальная сумма заказа — 2 500₽</div>
+							<div class="checkout-results__policy">Нажимаю на кнопку «Оформить заказ», вы даете согласие <a class="checkout-results__policy-link" href="#">на условия обработки персональных данных</a></div>
 						</div>
 						<section class="checkout-ordering">
 							<div class="checkout-ordering__wrapper">
@@ -85,7 +127,7 @@
 													</svg></div>
 												<div class="checkout-address__error-text">Минимальная сумма заказа для указанного адреса — 2 500₽</div>
 											</div>
-											<div class="checkout-address__delivery-select"><button class="sidebar-btn sidebar-btn_grey checkout-address__delivery-select_btn"><span>Куда доставить заказ?</span><svg class="sidebar-btn__svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<div class="checkout-address__delivery-select" data-fancy-button="delivery-map"><button class="sidebar-btn sidebar-btn_grey checkout-address__delivery-select_btn"><span>Куда доставить заказ?</span><svg class="sidebar-btn__svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
 													</svg></button></div>
@@ -124,7 +166,7 @@
 													<div class="checkout-address__appliances-text">Приборы</div>
 												</div>
 												<div class="checkout-address__counter">
-													<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></button>
 														<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,52 +231,60 @@
 											<div class="checkout-address__title">Выберите ресторан для получения заказа</div>
 											<div class="checkout-address__restaurants">
 												<div class="checkout-address__restaurants-item" data-rest-test="">
-													<div class="restaurants-item__row">
+													<div class="restaurants-col">
 														<div class="restaurants-item__icon">
 															<picture class="picture">
-																<source srcset="assets/images/fish-box.webp" type="image/webp"><img class="picture__img" src="assets/images/fish-box.jpg" alt="">
+																<source srcset="assets/images/fishbox1.webp" type="image/webp"><img class="picture__img" src="assets/images/fishbox1.jpg" alt="">
 															</picture>
 														</div>
-														<div class="restaurants-item__title">Fish Box</div>
 													</div>
-													<div class="restaurants-item__row">
-														<div class="restaurants-item__text">Москва, 66 км МКАД, ТРК VEGAS КРОКУС СИТИ, 4 этаж</div>
-													</div>
-													<div class="restaurants-item__row">
-														<div class="restaurants-item__time">
-															<div class="restaurants-item__time-text">10:00 — 22:00</div>
+													<div class="restaurants-col">
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__title">Fish Box</div>
 														</div>
-														<div class="restaurants-item__map">
-															<div class="restaurants-item__map-icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-																	<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
-																</svg></div>
-															<div class="restaurants-item__map-text">На карте</div>
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__text">Москва, 66 км МКАД, ТРК VEGAS КРОКУС СИТИ, 4 этаж</div>
+														</div>
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__time">
+																<div class="restaurants-item__time-text">10:00 — 22:00</div>
+															</div>
+															<div class="restaurants-item__map">
+																<div class="restaurants-item__map-icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
+																	</svg></div>
+																<div class="restaurants-item__map-text">На карте</div>
+															</div>
 														</div>
 													</div>
 												</div>
 												<div class="checkout-address__restaurants-item" data-rest-test="">
-													<div class="restaurants-item__row">
+													<div class="restaurants-col">
 														<div class="restaurants-item__icon">
 															<picture class="picture">
-																<source srcset="assets/images/fish-box.webp" type="image/webp"><img class="picture__img" src="assets/images/fish-box.jpg" alt="">
+																<source srcset="assets/images/fishbox1.webp" type="image/webp"><img class="picture__img" src="assets/images/fishbox1.jpg" alt="">
 															</picture>
 														</div>
-														<div class="restaurants-item__title">Fish Box</div>
 													</div>
-													<div class="restaurants-item__row">
-														<div class="restaurants-item__text">Москва, 66 км МКАД, ТРК VEGAS КРОКУС СИТИ, 4 этаж</div>
-													</div>
-													<div class="restaurants-item__row">
-														<div class="restaurants-item__time">
-															<div class="restaurants-item__time-text">10:00 — 22:00</div>
+													<div class="restaurants-col">
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__title">Fish Box</div>
 														</div>
-														<div class="restaurants-item__map">
-															<div class="restaurants-item__map-icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-																	<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
-																</svg></div>
-															<div class="restaurants-item__map-text">На карте</div>
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__text">Москва, 66 км МКАД, ТРК VEGAS КРОКУС СИТИ, 4 этаж</div>
+														</div>
+														<div class="restaurants-item__row">
+															<div class="restaurants-item__time">
+																<div class="restaurants-item__time-text">10:00 — 22:00</div>
+															</div>
+															<div class="restaurants-item__map">
+																<div class="restaurants-item__map-icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3203 7.5C18.3203 10.8137 15.634 13.5 12.3203 13.5C9.0066 13.5 6.32031 10.8137 6.32031 7.5C6.32031 4.18629 9.0066 1.5 12.3203 1.5C13.9116 1.5 15.4377 2.13214 16.563 3.25736C17.6882 4.38258 18.3203 5.9087 18.3203 7.5Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M13.0703 13.5C13.0703 13.0858 12.7345 12.75 12.3203 12.75C11.9061 12.75 11.5703 13.0858 11.5703 13.5H13.0703ZM11.5703 22.5C11.5703 22.9142 11.9061 23.25 12.3203 23.25C12.7345 23.25 13.0703 22.9142 13.0703 22.5H11.5703ZM12.2408 4.37408C11.8289 4.41801 11.5306 4.78751 11.5745 5.19939C11.6185 5.61127 11.988 5.90955 12.3999 5.86562L12.2408 4.37408ZM14.5864 7.15139C14.7483 7.53268 15.1886 7.71057 15.5698 7.54874C15.9511 7.3869 16.129 6.9466 15.9672 6.56532L14.5864 7.15139ZM11.5703 13.5V22.5H13.0703V13.5H11.5703ZM12.3999 5.86562C13.3323 5.76618 14.2201 6.28821 14.5864 7.15139L15.9672 6.56532C15.3428 5.09427 13.8298 4.2046 12.2408 4.37408L12.3999 5.86562Z" fill="#131313"></path>
+																	</svg></div>
+																<div class="restaurants-item__map-text">На карте</div>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -247,7 +297,7 @@
 													<div class="checkout-address__appliances-text">Приборы</div>
 												</div>
 												<div class="checkout-address__counter">
-													<div class="counter"><button data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></button>
 														<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +326,7 @@
 															<path d="M7.96582 13.8335V21.1669" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M27.0361 13.834V21.1674" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></div>
-													<div class="checkout-methods__payments-text">Наличными<br>курьеру</div>
+													<div class="checkout-methods__payments-text">Наличными курьеру</div>
 												</div>
 												<div class="checkout-methods__payments-item" data-method-payment="">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
@@ -285,7 +335,7 @@
 															<path d="M17.5 27.5083H24.1667" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M10.733 5.8418H29.2497C35.183 5.8418 36.6663 7.30846 36.6663 13.1585V26.8418C36.6663 32.6918 35.183 34.1585 29.2663 34.1585H10.733C4.81634 34.1751 3.33301 32.7085 3.33301 26.8585V13.1585C3.33301 7.30846 4.81634 5.8418 10.733 5.8418Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></div>
-													<div class="checkout-methods__payments-text">Картой<br>на сайте</div>
+													<div class="checkout-methods__payments-text">Картой на сайте</div>
 												</div>
 												<div class="checkout-methods__payments-item" data-method-payment="">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
@@ -314,7 +364,7 @@
 															<path d="M17.5 27.5083H24.1667" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M10.733 5.8418H29.2497C35.183 5.8418 36.6663 7.30846 36.6663 13.1585V26.8418C36.6663 32.6918 35.183 34.1585 29.2663 34.1585H10.733C4.81634 34.1751 3.33301 32.7085 3.33301 26.8585V13.1585C3.33301 7.30846 4.81634 5.8418 10.733 5.8418Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></div>
-													<div class="checkout-methods__payments-text">Картой<br>на сайте</div>
+													<div class="checkout-methods__payments-text">Картой на сайте</div>
 												</div>
 												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
@@ -418,17 +468,17 @@
 											<div class="checkout-results__summ">
 												<div class="checkout-results__summ-text">Сумма заказа</div>
 												<div class="checkout-results__summ-num">23 800₽</div>
-											</div><button class="checkout-results__submit">Оформить заказ</button>
+											</div><button class="checkout-results__submit checkout-desktop">Оформить заказ</button>
 											<div class="checkout-results__plug checkout-results__plug_grey">Недостаточная сумма заказа</div>
 											<div class="checkout-results__min-sum">Минимальная сумма заказа — 2 500₽</div>
-											<div class="checkout-results__policy">Нажимаю на кнопку «Оформить заказ», вы даете согласие <a class="checkout-results__policy-link" href="#">на условия обработки персональных данных</a></div>
+											<div class="checkout-results__policy checkout-desktop">Нажимаю на кнопку «Оформить заказ», вы даете согласие <a class="checkout-results__policy-link" href="#">на условия обработки персональных данных</a></div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</section>
 					</div>
-					<footer class="footer">
+					<footer class="footer footer--alt">
 						<div class="footer__wrapper">
 							<div class="footer__inner">
 								<div class="footer-row footer__row">
