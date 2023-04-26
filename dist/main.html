@@ -835,34 +835,57 @@
 						</div>
 						<div class="controls controls__top">
 							<div class="controls__row">
-								<div class="controls__basket"><button class="controls__basket-btn" data-basket="promo">Промокод</button><button class="controls__basket-btn" data-basket="loyalty">Карта лояльности</button></div>
+								<div class="controls__basket"><button class="controls__basket-btn controls__basket-btn-active" data-basket="promo">Промокод</button><button class="controls__basket-btn" data-basket="loyalty">Карта лояльности</button></div>
 								<div class="controls__input">
-									<div class="controls__input-promo controls__input-active" data-basketbox="promo"><label>
-											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Введите промокод</div><input class="input" data-input="1" required placeholder="Введите промокод"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<div class="controls__input-promo" data-basketbox="promo"><label>
+											<form data-form="promo">
+												<div class="input-wrapper" data-input-parent="">
+													<div class="input-wrapper__placeholder">Введите промокод</div><input class="input" data-input="1" required placeholder="Введите промокод"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</div><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+													<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+														<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+													</path>
 												</svg>
-											</div><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button>
+											</form>
+											<div class="controls__input-success" data-success="code">
+												<div class="controls__input-success-img">
+													<picture class="picture">
+														<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
+													</picture>
+												</div>
+												<p>Промокод <span>QQQQQ</span> успешно применен</p>
+											</div>
 										</label></div>
 									<div class="controls__input-loyalty" data-basketbox="loyalty"><label>
-											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Введите № карты лояльности</div><input class="input" data-input="2" required placeholder="Введите № карты лояльности"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<form data-form="loyalty">
+												<div class="input-wrapper" data-input-parent="">
+													<div class="input-wrapper__placeholder">Введите № карты лояльности</div><input class="input" data-input="2" required placeholder="Введите № карты лояльности"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</div><button class="controls__input-btn" id="basket-input-btn">Применить</button>
+											</form>
+											<form data-form="sms">
+												<div class="input-wrapper" data-input-parent="">
+													<div class="input-wrapper__placeholder">Введите код из SMS</div><input class="input" data-input="" required placeholder="Введите код из SMS"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</div><button class="controls__input-btn" id="basket-input-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+													<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+														<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+													</path>
 												</svg>
-											</div><button class="controls__input-btn" id="basket-input-btn">Применить</button>
+											</form>
+											<div class="controls__input-success" data-success="card">
+												<div class="controls__input-success-img">
+													<picture class="picture">
+														<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
+													</picture>
+												</div>
+												<p>Карта лояльности успешно применена</p>
+											</div>
 										</label></div>
-									<div class="controls__input-success"><svg class="controls__input-success-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect width="28" height="28" rx="14" fill="url(#paint0_linear_178_10846)"></rect>
-											<path d="M9 14L12.3294 17L19 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-											<defs>
-												<lineargradient id="paint0_linear_178_10846" x1="14" y1="0" x2="14" y2="39.6098" gradientUnits="userSpaceOnUse">
-													<stop offset="0.255208" stop-color="#92CFCB"></stop>
-													<stop offset="0.958333" stop-color="#1D3F3D"></stop>
-												</lineargradient>
-											</defs>
-										</svg>
-										<p>Промокод <span>QQQQQ</span> успешно применен</p>
-									</div>
 								</div>
 							</div>
 							<div class="controls__row">
@@ -1058,10 +1081,6 @@
 				</div>
 				<div class="modal__item" data-modal="4">
 					<div class="modal-card">
-						<div class="close modal-card__close" data-fancybox-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg></div>
 						<h2 class="modal-card__title">Укажите адрес доставки</h2>
 						<div class="modal-card__row-top">
 							<form class="modal-card__form" action="#">
@@ -1092,13 +1111,7 @@
 								</div><button class="modal-card__form-btn">Подтвердить адрес</button>
 							</form>
 						</div>
-						<div class="modal-card__row-card">
-							<div class="map">
-								<div class="map__wrapper">
-									<div id="map"></div>
-								</div>
-							</div>
-						</div>
+						<div class="modal-card__row-card"></div>
 					</div>
 				</div>
 			</div>
@@ -2494,7 +2507,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<31e2d049-0c3f-41f8-99a6-dbf7fa4d1461>"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=31e2d049-0c3f-41f8-99a6-dbf7fa4d1461"></script>
 	</body>
 
 </html>

@@ -16,10 +16,6 @@
 			<main class="main main--alt">
 				<div class="container">
 					<div class="modal-card checkout-modal-card" data-fancy-modal="delivery-map">
-						<div class="close modal-card__close" data-fancybox-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg></div>
 						<h2 class="modal-card__title">Укажите адрес доставки</h2>
 						<div class="modal-card__row-top">
 							<form class="modal-card__form" action="#">
@@ -50,13 +46,7 @@
 								</div><button class="modal-card__form-btn">Подтвердить адрес</button>
 							</form>
 						</div>
-						<div class="modal-card__row-card">
-							<div class="map">
-								<div class="map__wrapper">
-									<div id="map"></div>
-								</div>
-							</div>
-						</div>
+						<div class="modal-card__row-card"></div>
 					</div>
 					<div class="checkout-header mobile">
 						<div class="checkout-header__wrapper"><a class="checkout-header__button" href="#">
@@ -236,7 +226,7 @@
 										<div class="checkout-address" data-checkout-address="pickup">
 											<div class="checkout-address__title">Выберите ресторан для получения заказа</div>
 											<div class="checkout-address__restaurants">
-												<div class="checkout-address__restaurants-item" data-rest-test="">
+												<div class="checkout-address__restaurants-item" data-rest-test="" data-pickup-rest>
 													<div class="restaurants-col">
 														<div class="restaurants-item__icon">
 															<picture class="picture">
@@ -265,7 +255,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="checkout-address__restaurants-item" data-rest-test="">
+												<div class="checkout-address__restaurants-item" data-rest-test="" data-pickup-rest>
 													<div class="restaurants-col">
 														<div class="restaurants-item__icon">
 															<picture class="picture">
@@ -324,7 +314,7 @@
 												<div class="checkout-methods__plug-text">Не выбран адрес доставки</div>
 											</div>
 											<div class="checkout-methods__payments" data-methods-payment="delivery">
-												<div class="checkout-methods__payments-item active" data-method-payment="cash">
+												<div class="checkout-methods__payments-item active" data-method-payment="" data-method-cash="">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
 															<path d="M32.1663 13.2V21.7833C32.1663 26.9167 29.2329 29.1166 24.8329 29.1166H10.1829C9.43293 29.1166 8.71627 29.05 8.0496 28.9C7.63293 28.8334 7.23295 28.7167 6.86628 28.5834C4.36628 27.65 2.84961 25.4833 2.84961 21.7833V13.2C2.84961 8.06664 5.78293 5.8667 10.1829 5.8667H24.8329C28.5663 5.8667 31.2496 7.45002 31.9663 11.0667C32.0829 11.7334 32.1663 12.4166 32.1663 13.2Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M37.1684 18.2002V26.7835C37.1684 31.9169 34.2351 34.1168 29.8351 34.1168H15.1851C13.9518 34.1168 12.8351 33.9502 11.8684 33.5836C9.88511 32.8502 8.53509 31.3336 8.05176 28.9002C8.71842 29.0502 9.43509 29.1168 10.1851 29.1168H24.8351C29.2351 29.1168 32.1684 26.9169 32.1684 21.7835V13.2002C32.1684 12.4168 32.1018 11.7169 31.9684 11.0669C35.1351 11.7336 37.1684 13.9668 37.1684 18.2002Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -353,7 +343,7 @@
 												</div>
 											</div>
 											<div class="checkout-methods__payments" data-methods-payment="pickup">
-												<div class="checkout-methods__payments-item pickup active" data-method-payment="pickup">
+												<div class="checkout-methods__payments-item pickup active" data-method-payment="pickup" data-method-cash="no">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
 															<path d="M30.5 10.8664C25.0316 -0.585324 6.46178 0.462242 3.40822 14.0358C1.47438 22.6739 6.78823 30.0028 11.4295 34.5259C14.8263 37.8247 20.1738 37.8247 23.5538 34.5259C25.0127 33.1092 26.536 31.4189 27.8808 29.5" stroke="#131313" stroke-width="1.5"></path>
 															<path d="M14.667 18.7H36.667" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -363,7 +353,7 @@
 														</svg></div>
 													<div class="checkout-methods__payments-text">Картой в ресторане</div>
 												</div>
-												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup">
+												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup" data-method-cash="no">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
 															<path d="M3.33301 14.1748H36.6663" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M10 27.5083H13.3333" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -372,7 +362,7 @@
 														</svg></div>
 													<div class="checkout-methods__payments-text">Картой на сайте</div>
 												</div>
-												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup">
+												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup" data-method-cash="no">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
 															<path d="M5.625 12.8036L18.9593 20.5022L5.625 28.2008C5.45833 28.297 5.25 28.1767 5.25 27.9842L5.25 13.0201C5.25 12.8277 5.45833 12.7074 5.625 12.8036Z" stroke="#131313" stroke-width="1.5"></path>
 															<path d="M33.1248 11.7671C33.2915 11.8634 33.2915 12.1039 33.1248 12.2001L19.7905 19.8987L19.7905 4.50158C19.7905 4.30913 19.9989 4.18885 20.1655 4.28508L33.1248 11.7671Z" stroke="#131313" stroke-width="1.5"></path>
@@ -380,7 +370,7 @@
 														</svg></div>
 													<div class="checkout-methods__payments-text">Через СБП</div>
 												</div>
-												<div class="checkout-methods__payments-item pickup" data-method-payment="pickup">
+												<div class="checkout-methods__payments-item pickup cash" data-method-payment="pickup" data-method-cash="yes">
 													<div class="checkout-methods__payments-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
 															<path d="M32.1663 13.2V21.7833C32.1663 26.9167 29.2329 29.1166 24.8329 29.1166H10.1829C9.43293 29.1166 8.71627 29.05 8.0496 28.9C7.63293 28.8334 7.23295 28.7167 6.86628 28.5834C4.36628 27.65 2.84961 25.4833 2.84961 21.7833V13.2C2.84961 8.06664 5.78293 5.8667 10.1829 5.8667H24.8329C28.5663 5.8667 31.2496 7.45002 31.9663 11.0667C32.0829 11.7334 32.1663 12.4166 32.1663 13.2Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															<path d="M37.1684 18.2002V26.7835C37.1684 31.9169 34.2351 34.1168 29.8351 34.1168H15.1851C13.9518 34.1168 12.8351 33.9502 11.8684 33.5836C9.88511 32.8502 8.53509 31.3336 8.05176 28.9002C8.71842 29.0502 9.43509 29.1168 10.1851 29.1168H24.8351C29.2351 29.1168 32.1684 26.9169 32.1684 21.7835V13.2002C32.1684 12.4168 32.1018 11.7169 31.9684 11.0669C35.1351 11.7336 37.1684 13.9668 37.1684 18.2002Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -391,12 +381,12 @@
 													<div class="checkout-methods__payments-text">Наличными в ресторане</div>
 												</div>
 											</div>
-											<div class="checkout-methods__input">
+											<div class="checkout-methods__input" data-input-cash="">
 												<div class="input-wrapper" data-input-parent="">
 													<div class="input-wrapper__placeholder">С какой купюры понадобится сдача?</div><input class="input" data-input="" required placeholder="С какой купюры понадобится сдача?" data-input-checkbox=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 													</svg>
-												</div><label class="checkout-methods__input-label"><input type="checkbox">
+												</div><label class="checkout-methods__input-label"><input class="mark-input" type="checkbox">
 													<div class="checkout-methods__input-mark"><svg class="checked-mark" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26" fill="none">
 															<rect width="26" height="26" rx="8" fill="#A0E1DC"></rect>
 															<path d="M7 13.5L10.6522 17L19 9" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -615,7 +605,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<31e2d049-0c3f-41f8-99a6-dbf7fa4d1461>"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=31e2d049-0c3f-41f8-99a6-dbf7fa4d1461"></script>
 	</body>
 
 </html>
