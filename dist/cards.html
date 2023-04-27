@@ -12,6 +12,886 @@
 	</head>
 
 	<body class="body">
+		<div class="overlay"></div>
+		<div class="modal">
+			<div class="modal__item" data-modal="1">
+				<div class="basket-modal" data-fancy-modal="modal-1">
+					<div class="basket-modal__inner">
+						<p class="basket-modal__title">Очистить корину?</p>
+						<div class="basket-modal__buttons"><button class="basket-modal__btn basket-modal__btn_white" data-basket-modal="">Нет</button><button class="basket-modal__btn basket-modal__btn_green" data-basket-modal="close">Да</button></div>
+					</div>
+				</div>
+				<div class="basket">
+					<div class="basket-empty">
+						<h2 class="basket-empty__title">Корзина</h2>
+						<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div><svg class="basket-empty__svg-bg" width="311" height="300" viewBox="0 0 311 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M112.594 154.876C100.149 161.222 93.1333 174.217 93.1333 184.665C93.1333 211.301 114.18 219.223 163.634 233.491C201.274 244.263 223.601 249.336 223.601 283.57C232.853 277.871 245.298 265.18 245.298 247.113C245.298 223.346 227.749 207.482 174.493 194.164C118.003 179.936 112.594 176.763 112.594 154.876ZM162.353 47.0988C181.813 61.6901 187.243 84.1833 187.243 102.897C187.243 121.914 182.139 144.428 162.353 158.049C199.362 154.876 222.32 134.283 222.32 102.897C222.32 72.4618 199.342 50.5951 162.353 47.0988ZM149.278 47.4222C112.594 50.9184 89.3103 72.7851 89.3103 102.897C89.3103 133.01 112.268 154.896 149.603 158.372C129.512 144.105 124.408 121.591 124.408 102.897C124.388 84.2035 129.492 61.0434 149.278 47.4222ZM0 152.027C0 83.2335 34.4471 31.2545 90.5914 9.38784C163.004 -16.6016 217.216 12.8841 224.557 79.1309C233.179 68.6624 238.588 54.7178 238.588 38.8735C238.588 27.152 236.026 20.1797 232.853 14.7838C281.657 39.1969 311 88.3262 311 152.047C311 217.667 280.071 267.746 229.031 291.533C157.9 315.946 104.948 286.137 97.6272 220.517C89.656 230.985 83.9013 245.88 83.9013 259.824C83.9013 274.092 90.2864 289.936 101.45 298.808C38.9004 279.468 0 225.569 0 152.027Z" fill="#F5F5F5"></path>
+						</svg>
+						<div class="basket-empty__row">
+							<p class="basket-empty__text">В корзине пусто</p>
+							<p class="basket-empty__subtext">Выберите блюда в меню нашиз ресторанов<br />Доставка бесплатаная</p>
+						</div>
+						<div class="basket-empty__row">
+							<div class="modal-restaurants">
+								<div class="close modal-restaurants__close" data-modalrestourants-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="modal-restaurants__title">
+									<h3>Рестораны</h3>
+								</div>
+								<div class="modal-restaurants__items">
+									<div class="modal-restaurants__item">
+										<div class="modal-restaurants__item-col">
+											<picture class="picture">
+												<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+											</picture>
+										</div>
+										<div class="modal-restaurants__item-col">
+											<h4 class="modal-restaurants__item-title">Fich Box</h4>
+											<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+										</div>
+									</div>
+									<div class="modal-restaurants__item">
+										<div class="modal-restaurants__item-col">
+											<picture class="picture">
+												<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+											</picture>
+										</div>
+										<div class="modal-restaurants__item-col">
+											<h4 class="modal-restaurants__item-title">Fich Box</h4>
+											<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+										</div>
+									</div>
+									<div class="modal-restaurants__item">
+										<div class="modal-restaurants__item-col">
+											<picture class="picture">
+												<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+											</picture>
+										</div>
+										<div class="modal-restaurants__item-col">
+											<h4 class="modal-restaurants__item-title">Fich Box</h4>
+											<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="basket__row-top">
+						<div class="basket__title">Корзина</div><button class="basket__btn basket__row-top_btn" data-fancy-button="modal-1"><svg class="basket-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M7.08325 4.14169L7.26659 3.05002C7.39992 2.25835 7.49992 1.66669 8.90825 1.66669H11.0916C12.4999 1.66669 12.6083 2.29169 12.7333 3.05835L12.9166 4.14169" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M15.7084 7.61664L15.1667 16.0083C15.0751 17.3166 15.0001 18.3333 12.6751 18.3333H7.32508C5.00008 18.3333 4.92508 17.3166 4.83341 16.0083L4.29175 7.61664" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.6084 13.75H11.3834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M7.91675 10.4167H12.0834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg><span>Очистить</span></button>
+						<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+					</div>
+					<div class="basket__row-middle">
+						<div class="basket-restaurant">
+							<h3 class="basket-restaurant__title">Ресторан</h3>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="basket-restaurant">
+							<h3 class="basket-restaurant__title">Ресторан</h3>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<div class="basket__item-col">
+									<div class="basket__item-imgBox">
+										<picture class="picture basket__item-img">
+											<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="basket__item-col">
+									<h3 class="basket__item-title">Название</h3>
+									<p class="basket__item-weight"></p>
+									<div class="basket__item-discription">
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p><span></span>
+										<p>Lorem, ipsum dolor.</p>
+									</div>
+									<div class="basket-controls">
+										<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
+										<div class="basket-controls__col">
+											<div class="basket-controls__price">999<span>777</span></div>
+											<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+												<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="controls controls__top">
+						<div class="controls__row">
+							<div class="controls__basket"><button class="controls__basket-btn controls__basket-btn-active" data-basket="promo">Промокод</button><button class="controls__basket-btn" data-basket="loyalty">Карта лояльности</button></div>
+							<div class="controls__input">
+								<div class="controls__input-promo" data-basketbox="promo"><label>
+										<form data-form="promo">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Введите промокод</div><input class="input" data-input="1" required placeholder="Введите промокод"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</div><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+												<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+													<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+												</path>
+											</svg>
+										</form>
+										<div class="controls__input-success" data-success="code">
+											<div class="controls__input-success-img">
+												<picture class="picture">
+													<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
+												</picture>
+											</div>
+											<p>Промокод <span>QQQQQ</span> успешно применен</p>
+										</div>
+									</label></div>
+								<div class="controls__input-loyalty" data-basketbox="loyalty"><label>
+										<form data-form="loyalty">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Введите № карты лояльности</div><input class="input" data-input="2" required placeholder="Введите № карты лояльности"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</div><button class="controls__input-btn" id="basket-input-btn">Применить</button>
+										</form>
+										<form data-form="sms">
+											<div class="input-wrapper" data-input-parent="">
+												<div class="input-wrapper__placeholder">Введите код из SMS</div><input class="input" data-input="" required placeholder="Введите код из SMS"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</div><button class="controls__input-btn" id="basket-input-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+												<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+													<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+												</path>
+											</svg>
+										</form>
+										<div class="controls__input-success" data-success="card">
+											<div class="controls__input-success-img">
+												<picture class="picture">
+													<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
+												</picture>
+											</div>
+											<p>Карта лояльности успешно применена</p>
+										</div>
+									</label></div>
+							</div>
+						</div>
+						<div class="controls__row">
+							<div class="controls__quantity">
+								<div class="controls__quantity-col">
+									<p>6 позиций</p>
+								</div>
+								<div class="controls__quantity-col">
+									<p class="controls__quantity-number">34 900₽</p>
+								</div>
+							</div>
+							<div class="controls__discount">
+								<div class="controls__discount-col">
+									<p>6 позиций</p>
+								</div>
+								<div class="controls__discount-col">
+									<p class="controls__discount-number">34 900₽</p>
+								</div>
+							</div>
+							<div class="controls__total">
+								<div class="controls__total-col">
+									<p>Итого</p>
+								</div>
+								<div class="controls__total-col">
+									<p class="contols__total-number">34 900₽</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="basket__row-bottom controls">
+						<div class="controls__bottom">
+							<div class="controls__bottom-col">
+								<p class="controls__bottom-total">Итого</p>
+								<p class="controls__bottom-price">98089</p>
+							</div>
+							<div class="controls__bottom-col"><button class="controls__bottom-btn">
+									<p>К оформлению</p><svg class="controls__bottom-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M24.05 9.8833L34.1667 20L24.05 30.1166" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M5.83337 20H33.8834" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__item" data-modal="2">
+				<div class="modal-restaurants">
+					<div class="close modal-restaurants__close" data-modalrestourants-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-restaurants__title">
+						<h3>Рестораны</h3>
+					</div>
+					<div class="modal-restaurants__items">
+						<div class="modal-restaurants__item">
+							<div class="modal-restaurants__item-col">
+								<picture class="picture">
+									<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+								</picture>
+							</div>
+							<div class="modal-restaurants__item-col">
+								<h4 class="modal-restaurants__item-title">Fich Box</h4>
+								<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+							</div>
+						</div>
+						<div class="modal-restaurants__item">
+							<div class="modal-restaurants__item-col">
+								<picture class="picture">
+									<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+								</picture>
+							</div>
+							<div class="modal-restaurants__item-col">
+								<h4 class="modal-restaurants__item-title">Fich Box</h4>
+								<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+							</div>
+						</div>
+						<div class="modal-restaurants__item">
+							<div class="modal-restaurants__item-col">
+								<picture class="picture">
+									<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
+								</picture>
+							</div>
+							<div class="modal-restaurants__item-col">
+								<h4 class="modal-restaurants__item-title">Fich Box</h4>
+								<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__item" data-modal="3">
+				<div class="booking">
+					<div class="booking__inner">
+						<div class="close" data-close="1"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+						<div class="back" data-back="1"><svg class="back-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.95019 4.07992L15.4702 10.5999C16.2402 11.3699 16.2402 12.6299 15.4702 13.3999L8.9502 19.9199" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></div>
+						<div class="booking__title">
+							<p>Забронировать стол</p>
+						</div>
+						<form class="form booking__grid" action="#">
+							<div class="booking__item booking__restaurants">
+								<div class="select-wrapper">
+									<div class="select"><select class="select__select" data-select-placeholder="Какой ресторан?" style="width: 100%" data-checkout-select="">
+											<option value="" disabled="disabled" selected="selected"></option>
+											<option value="Fish Box">Fish Box</option>
+											<option value="Zafferano Estate">Zafferano Estate</option>
+											<option value="Milano Estate">Milano Estate</option>
+										</select></div>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">На какое имя?</div><input class="input booking__name" data-input="" required placeholder="На какое имя?"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date padding-right-54" data-input="" required type="datatime-local" placeholder="Дата" data-airdatepicker="1" data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M16 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M20.75 17.6H3.25" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M9.5 11H14.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12 13.5V8.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<div class="booking__item">
+								<div class="select-wrapper select-date">
+									<div class="select-wrapper">
+										<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="">
+												<option value="" disabled="disabled" selected="selected"></option>
+												<option value="14:00">14:00</option>
+												<option value="14:30">14:30</option>
+												<option value="15:00">15:00</option>
+												<option value="15:30">15:30</option>
+												<option value="16:00">16:00</option>
+												<option value="16:30">16:30</option>
+												<option value="17:00">17:00</option>
+												<option value="17:30">17:30</option>
+												<option value="18:00">18:00</option>
+												<option value="18:30">18:30</option>
+												<option value="19:00">19:00</option>
+											</select></div>
+									</div>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="booking__guest">
+									<p>Количество гостей</p>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></button>
+									<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></button>
+								</div>
+							</div>
+							<div class="booking__item">
+								<div class="input-wrapper" data-input-parent="">
+									<div class="input-wrapper__placeholder">Комментарий к брони</div><textarea class="textarea" data-input="" placeholder="Комментарий к брони"></textarea>
+								</div>
+							</div>
+							<div class="booking__item"><button class="booking__btn" data-fancy-button="43b">Забронировать стол</button></div>
+							<div class="booking__item">
+								<div class="booking__text">
+									<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__item" data-modal="4">
+				<div class="modal-card">
+					<h2 class="modal-card__title">Укажите адрес доставки</h2>
+					<div class="close modal-card__close" data-fancybox-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-card__row-top">
+						<form class="modal-card__form" action="#">
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Улица,дом</div><input class="input modal-card__form-street" data-input="" required placeholder="Улица,дом"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Подъезд</div><input class="input" data-input="" required placeholder="Подъезд"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Этаж</div><input class="input" data-input="" required placeholder="Этаж"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Домофон</div><input class="input" data-input="" required placeholder="Домофон"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<div class="input-wrapper" data-input-parent="">
+								<div class="input-wrapper__placeholder">Квартира</div><input class="input" data-input="" required placeholder="Квартира"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div><button class="modal-card__form-btn">Подтвердить адрес</button>
+						</form>
+					</div>
+					<div class="modal-card__row-card"></div>
+				</div>
+			</div>
+		</div>
 		<div class="wrapper">
 			<header class="header header--alt">
 				<div class="container">
@@ -26,882 +906,6 @@
 							</svg></button></div>
 				</div>
 			</header>
-			<div class="overlay"></div>
-			<div class="modal">
-				<div class="modal__item" data-modal="1">
-					<div class="basket-modal" data-fancy-modal="modal-1">
-						<div class="basket-modal__inner">
-							<p class="basket-modal__title">Очистить корину?</p>
-							<div class="basket-modal__buttons"><button class="basket-modal__btn basket-modal__btn_white" data-basket-modal="">Нет</button><button class="basket-modal__btn basket-modal__btn_green" data-basket-modal="close">Да</button></div>
-						</div>
-					</div>
-					<div class="basket">
-						<div class="basket-empty">
-							<h2 class="basket-empty__title">Корзина</h2>
-							<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg></div><svg class="basket-empty__svg-bg" width="311" height="300" viewBox="0 0 311 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M112.594 154.876C100.149 161.222 93.1333 174.217 93.1333 184.665C93.1333 211.301 114.18 219.223 163.634 233.491C201.274 244.263 223.601 249.336 223.601 283.57C232.853 277.871 245.298 265.18 245.298 247.113C245.298 223.346 227.749 207.482 174.493 194.164C118.003 179.936 112.594 176.763 112.594 154.876ZM162.353 47.0988C181.813 61.6901 187.243 84.1833 187.243 102.897C187.243 121.914 182.139 144.428 162.353 158.049C199.362 154.876 222.32 134.283 222.32 102.897C222.32 72.4618 199.342 50.5951 162.353 47.0988ZM149.278 47.4222C112.594 50.9184 89.3103 72.7851 89.3103 102.897C89.3103 133.01 112.268 154.896 149.603 158.372C129.512 144.105 124.408 121.591 124.408 102.897C124.388 84.2035 129.492 61.0434 149.278 47.4222ZM0 152.027C0 83.2335 34.4471 31.2545 90.5914 9.38784C163.004 -16.6016 217.216 12.8841 224.557 79.1309C233.179 68.6624 238.588 54.7178 238.588 38.8735C238.588 27.152 236.026 20.1797 232.853 14.7838C281.657 39.1969 311 88.3262 311 152.047C311 217.667 280.071 267.746 229.031 291.533C157.9 315.946 104.948 286.137 97.6272 220.517C89.656 230.985 83.9013 245.88 83.9013 259.824C83.9013 274.092 90.2864 289.936 101.45 298.808C38.9004 279.468 0 225.569 0 152.027Z" fill="#F5F5F5"></path>
-							</svg>
-							<div class="basket-empty__row">
-								<p class="basket-empty__text">В корзине пусто</p>
-								<p class="basket-empty__subtext">Выберите блюда в меню нашиз ресторанов<br />Доставка бесплатаная</p>
-							</div>
-							<div class="basket-empty__row">
-								<div class="modal-restaurants">
-									<div class="close modal-restaurants__close" data-modalrestourants-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="modal-restaurants__title">
-										<h3>Рестораны</h3>
-									</div>
-									<div class="modal-restaurants__items">
-										<div class="modal-restaurants__item">
-											<div class="modal-restaurants__item-col">
-												<picture class="picture">
-													<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-												</picture>
-											</div>
-											<div class="modal-restaurants__item-col">
-												<h4 class="modal-restaurants__item-title">Fich Box</h4>
-												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-											</div>
-										</div>
-										<div class="modal-restaurants__item">
-											<div class="modal-restaurants__item-col">
-												<picture class="picture">
-													<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-												</picture>
-											</div>
-											<div class="modal-restaurants__item-col">
-												<h4 class="modal-restaurants__item-title">Fich Box</h4>
-												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-											</div>
-										</div>
-										<div class="modal-restaurants__item">
-											<div class="modal-restaurants__item-col">
-												<picture class="picture">
-													<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-												</picture>
-											</div>
-											<div class="modal-restaurants__item-col">
-												<h4 class="modal-restaurants__item-title">Fich Box</h4>
-												<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="basket__row-top">
-							<div class="basket__title">Корзина</div><button class="basket__btn basket__row-top_btn" data-fancy-button="modal-1"><svg class="basket-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M7.08325 4.14169L7.26659 3.05002C7.39992 2.25835 7.49992 1.66669 8.90825 1.66669H11.0916C12.4999 1.66669 12.6083 2.29169 12.7333 3.05835L12.9166 4.14169" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M15.7084 7.61664L15.1667 16.0083C15.0751 17.3166 15.0001 18.3333 12.6751 18.3333H7.32508C5.00008 18.3333 4.92508 17.3166 4.83341 16.0083L4.29175 7.61664" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M8.6084 13.75H11.3834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M7.91675 10.4167H12.0834" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg><span>Очистить</span></button>
-							<div class="close basket__close" data-basket-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg></div>
-						</div>
-						<div class="basket__row-middle">
-							<div class="basket-restaurant">
-								<h3 class="basket-restaurant__title">Ресторан</h3>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="basket-restaurant">
-								<h3 class="basket-restaurant__title">Ресторан</h3>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket__item">
-									<div class="basket__item-close"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="basket__item-col">
-										<div class="basket__item-imgBox">
-											<picture class="picture basket__item-img">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img class="picture__img" src="assets/images/main-slide-1.jpg" alt="">
-											</picture>
-										</div>
-									</div>
-									<div class="basket__item-col">
-										<h3 class="basket__item-title">Название</h3>
-										<p class="basket__item-weight"></p>
-										<div class="basket__item-discription">
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p><span></span>
-											<p>Lorem, ipsum dolor.</p>
-										</div>
-										<div class="basket-controls">
-											<div class="basket-controls__col"><button class="basket-controls__btn">Изменить</button></div>
-											<div class="basket-controls__col">
-												<div class="basket-controls__price">999<span>777</span></div>
-												<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-													<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-															<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														</svg></button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="controls controls__top">
-							<div class="controls__row">
-								<div class="controls__basket"><button class="controls__basket-btn controls__basket-btn-active" data-basket="promo">Промокод</button><button class="controls__basket-btn" data-basket="loyalty">Карта лояльности</button></div>
-								<div class="controls__input">
-									<div class="controls__input-promo" data-basketbox="promo"><label>
-											<form data-form="promo">
-												<div class="input-wrapper" data-input-parent="">
-													<div class="input-wrapper__placeholder">Введите промокод</div><input class="input" data-input="1" required placeholder="Введите промокод"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div><button class="controls__input-btn" id="basket-promoCode-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-													<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-														<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
-													</path>
-												</svg>
-											</form>
-											<div class="controls__input-success" data-success="code">
-												<div class="controls__input-success-img">
-													<picture class="picture">
-														<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
-													</picture>
-												</div>
-												<p>Промокод <span>QQQQQ</span> успешно применен</p>
-											</div>
-										</label></div>
-									<div class="controls__input-loyalty" data-basketbox="loyalty"><label>
-											<form data-form="loyalty">
-												<div class="input-wrapper" data-input-parent="">
-													<div class="input-wrapper__placeholder">Введите № карты лояльности</div><input class="input" data-input="2" required placeholder="Введите № карты лояльности"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div><button class="controls__input-btn" id="basket-input-btn">Применить</button>
-											</form>
-											<form data-form="sms">
-												<div class="input-wrapper" data-input-parent="">
-													<div class="input-wrapper__placeholder">Введите код из SMS</div><input class="input" data-input="" required placeholder="Введите код из SMS"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div><button class="controls__input-btn" id="basket-input-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-													<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-														<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
-													</path>
-												</svg>
-											</form>
-											<div class="controls__input-success" data-success="card">
-												<div class="controls__input-success-img">
-													<picture class="picture">
-														<source srcset="assets/images/success.webp" type="image/webp"><img class="picture__img" src="assets/images/success.png" alt="">
-													</picture>
-												</div>
-												<p>Карта лояльности успешно применена</p>
-											</div>
-										</label></div>
-								</div>
-							</div>
-							<div class="controls__row">
-								<div class="controls__quantity">
-									<div class="controls__quantity-col">
-										<p>6 позиций</p>
-									</div>
-									<div class="controls__quantity-col">
-										<p class="controls__quantity-number">34 900₽</p>
-									</div>
-								</div>
-								<div class="controls__discount">
-									<div class="controls__discount-col">
-										<p>6 позиций</p>
-									</div>
-									<div class="controls__discount-col">
-										<p class="controls__discount-number">34 900₽</p>
-									</div>
-								</div>
-								<div class="controls__total">
-									<div class="controls__total-col">
-										<p>Итого</p>
-									</div>
-									<div class="controls__total-col">
-										<p class="contols__total-number">34 900₽</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="basket__row-bottom controls">
-							<div class="controls__bottom">
-								<div class="controls__bottom-col">
-									<p class="controls__bottom-total">Итого</p>
-									<p class="controls__bottom-price">98089</p>
-								</div>
-								<div class="controls__bottom-col"><button class="controls__bottom-btn">
-										<p>К оформлению</p><svg class="controls__bottom-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M24.05 9.8833L34.1667 20L24.05 30.1166" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M5.83337 20H33.8834" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal__item" data-modal="2">
-					<div class="modal-restaurants">
-						<div class="close modal-restaurants__close" data-modalrestourants-close=""><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg></div>
-						<div class="modal-restaurants__title">
-							<h3>Рестораны</h3>
-						</div>
-						<div class="modal-restaurants__items">
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Fich Box</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Fich Box</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-								</div>
-							</div>
-							<div class="modal-restaurants__item">
-								<div class="modal-restaurants__item-col">
-									<picture class="picture">
-										<source srcset="assets/images/restaurants__list-1.webp" type="image/webp"><img class="picture__img" src="assets/images/restaurants__list-1.jpg" alt="">
-									</picture>
-								</div>
-								<div class="modal-restaurants__item-col">
-									<h4 class="modal-restaurants__item-title">Fich Box</h4>
-									<div class="modal-restaurants__item-buttons"><button class="modal-restaurants__item-btn modal-restaurants__item-btn_green">Меню доставки</button><button class="modal-restaurants__item-btn modal-restaurants__item-btn_white">О ресторане</button></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal__item" data-modal="3">
-					<div class="booking">
-						<div class="booking__inner">
-							<div class="close" data-close="1"><svg class="basket__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg></div>
-							<div class="back" data-back="1"><svg class="back-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M8.95019 4.07992L15.4702 10.5999C16.2402 11.3699 16.2402 12.6299 15.4702 13.3999L8.9502 19.9199" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg></div>
-							<div class="booking__title">
-								<p>Забронировать стол</p>
-							</div>
-							<form class="form booking__grid" action="#">
-								<div class="booking__item booking__restaurants">
-									<div class="select-wrapper">
-										<div class="select"><select class="select__select" data-select-placeholder="Какой ресторан?" style="width: 100%" data-checkout-select="">
-												<option value="" disabled="disabled" selected="selected"></option>
-												<option value="Fish Box">Fish Box</option>
-												<option value="Zafferano Estate">Zafferano Estate</option>
-												<option value="Milano Estate">Milano Estate</option>
-											</select></div>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">На какое имя?</div><input class="input booking__name" data-input="" required placeholder="На какое имя?"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date padding-right-54" data-input="" required type="datatime-local" placeholder="Дата" data-airdatepicker="1" data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M8 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M16 2V5" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M20.75 17.6H3.25" stroke="#131313" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M9.5 11H14.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M12 13.5V8.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div>
-								<div class="booking__item">
-									<div class="select-wrapper select-date">
-										<div class="select-wrapper">
-											<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="">
-													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="14:00">14:00</option>
-													<option value="14:30">14:30</option>
-													<option value="15:00">15:00</option>
-													<option value="15:30">15:30</option>
-													<option value="16:00">16:00</option>
-													<option value="16:30">16:30</option>
-													<option value="17:00">17:00</option>
-													<option value="17:30">17:30</option>
-													<option value="18:00">18:00</option>
-													<option value="18:30">18:30</option>
-													<option value="19:00">19:00</option>
-												</select></div>
-										</div>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="booking__guest">
-										<p>Количество гостей</p>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="counter"><button class="disable" data-counter-btn="decrement" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg></button>
-										<p>1</p><button data-counter-btn="increment" type="button"><svg class="basket-controls__counter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg></button>
-									</div>
-								</div>
-								<div class="booking__item">
-									<div class="input-wrapper" data-input-parent="">
-										<div class="input-wrapper__placeholder">Комментарий к брони</div><textarea class="textarea" data-input="" placeholder="Комментарий к брони"></textarea>
-									</div>
-								</div>
-								<div class="booking__item"><button class="booking__btn" data-fancy-button="43b">Забронировать стол</button></div>
-								<div class="booking__item">
-									<div class="booking__text">
-										<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="modal__item" data-modal="4">
-					<div class="modal-card">
-						<h2 class="modal-card__title">Укажите адрес доставки</h2>
-						<div class="modal-card__row-top">
-							<form class="modal-card__form" action="#">
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Улица,дом</div><input class="input modal-card__form-street" data-input="" required placeholder="Улица,дом"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Подъезд</div><input class="input" data-input="" required placeholder="Подъезд"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Этаж</div><input class="input" data-input="" required placeholder="Этаж"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Домофон</div><input class="input" data-input="" required placeholder="Домофон"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div>
-								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Квартира</div><input class="input" data-input="" required placeholder="Квартира"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</div><button class="modal-card__form-btn">Подтвердить адрес</button>
-							</form>
-						</div>
-						<div class="modal-card__row-card"></div>
-					</div>
-				</div>
-			</div>
 			<main class="main">
 				<div class="container">
 					<div class="row">
@@ -975,6 +979,7 @@
 							</div>
 						</div>
 						<div class="row__col">
+							<div class="test">Тест</div>
 							<section class="profile">
 								<div class="profile__col profile__col-submenu">
 									<div class="submenu cards-active">
@@ -1058,12 +1063,14 @@
 											</div>
 										</div>
 										<div class="card-delete" data-fancy-modal="13c">
-											<p class="card-delete__text">Удалить эту карту?</p>
-											<div class="card-delete__buttons"><button class="card-delete__btn">Нет</button><button class="card-delete__btn card-delete__btn_green" data-cards-delete="yes"><span>Да</span><svg class="card-delete-loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-														<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-															<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
-														</path>
-													</svg></button></div>
+											<div class="card-delete__inner">
+												<p class="card-delete__text">Удалить эту карту?</p>
+												<div class="card-delete__buttons"><button class="card-delete__btn">Нет</button><button class="card-delete__btn card-delete__btn_green" data-cards-delete="yes"><span>Да</span><svg class="card-delete-loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+															<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+																<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+															</path>
+														</svg></button></div>
+											</div>
 										</div>
 										<div class="cards">
 											<div class="cards__row">
@@ -1098,7 +1105,7 @@
 															</picture>
 														</div>
 													</div>
-													<div class="cards__box-item">
+													<div class="cards__box-item" data-cards="add">
 														<div class="new-card" data-fancy-button="43c"><svg class="new-card-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 																<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1106,7 +1113,7 @@
 															<p>Добавьте вашу скидочную карту</p>
 														</div>
 													</div>
-													<div class="cards__box-item user-card">
+													<div class="cards__box-item user-card" data-cards="new">
 														<div class="user-card__close" data-fancy-button="13c"><svg class="user-card__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M6 12H18" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 																<path d="M12 18V6" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1137,6 +1144,12 @@
 															<path d="M18.6463 16.2199C18.6463 16.4599 18.593 16.7066 18.4797 16.9466C18.3663 17.1866 18.2197 17.4133 18.0263 17.6266C17.6997 17.9866 17.3397 18.2466 16.933 18.4133C16.533 18.5799 16.0997 18.6666 15.633 18.6666C14.953 18.6666 14.2263 18.5066 13.4597 18.1799C12.693 17.8533 11.9263 17.4133 11.1663 16.8599C10.3997 16.2999 9.67301 15.6799 8.97967 14.9933C8.29301 14.2999 7.67301 13.5733 7.11967 12.8133C6.57301 12.0533 6.13301 11.2933 5.81301 10.5399C5.49301 9.77992 5.33301 9.05325 5.33301 8.35992C5.33301 7.90659 5.41301 7.47325 5.57301 7.07325C5.73301 6.66659 5.98634 6.29325 6.33967 5.95992C6.76634 5.53992 7.23301 5.33325 7.72634 5.33325C7.91301 5.33325 8.09967 5.37325 8.26634 5.45325C8.43967 5.53325 8.59301 5.65325 8.71301 5.82659L10.2597 8.00659C10.3797 8.17325 10.4663 8.32659 10.5263 8.47325C10.5863 8.61325 10.6197 8.75325 10.6197 8.87992C10.6197 9.03992 10.573 9.19992 10.4797 9.35325C10.393 9.50659 10.2663 9.66659 10.1063 9.82659L9.59967 10.3533C9.52634 10.4266 9.49301 10.5133 9.49301 10.6199C9.49301 10.6733 9.49967 10.7199 9.51301 10.7733C9.53301 10.8266 9.55301 10.8666 9.56634 10.9066C9.68634 11.1266 9.89301 11.4133 10.1863 11.7599C10.4863 12.1066 10.8063 12.4599 11.153 12.8133C11.513 13.1666 11.8597 13.4933 12.213 13.7933C12.5597 14.0866 12.8463 14.2866 13.073 14.4066C13.1063 14.4199 13.1463 14.4399 13.193 14.4599C13.2463 14.4799 13.2997 14.4866 13.3597 14.4866C13.473 14.4866 13.5597 14.4466 13.633 14.3733L14.1397 13.8733C14.3063 13.7066 14.4663 13.5799 14.6197 13.4999C14.773 13.4066 14.9263 13.3599 15.093 13.3599C15.2197 13.3599 15.353 13.3866 15.4997 13.4466C15.6463 13.5066 15.7997 13.5933 15.9663 13.7066L18.173 15.2733C18.3463 15.3933 18.4663 15.5333 18.5397 15.6999C18.6063 15.8666 18.6463 16.0333 18.6463 16.2199Z" stroke="#131313" stroke-width="1.3" stroke-miterlimit="10"></path>
 															<path d="M17.3328 6.6665H14.1328M17.3328 6.6665V9.8665V6.6665Z" stroke="#131313" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg><span>8 499 455-55-95</span></a></div>
+											</div>
+										</div>
+										<div class="user-exit" data-fancy-modal="21e">
+											<div class="user-exit__inner">
+												<h3 class="user-exit__title">Хотите покинуть аккаунт?</h3>
+												<div class="user-exit__row"><button class="user-exit__btn_1">Нет</button><button class="user-exit__btn_2">Да</button></div>
 											</div>
 										</div>
 									</div>
