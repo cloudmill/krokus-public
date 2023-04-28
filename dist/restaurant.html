@@ -763,7 +763,7 @@
 						<div class="booking__title">
 							<p>Забронировать стол</p>
 						</div>
-						<form class="form booking__grid" action="#">
+						<form class="form booking__grid" action="#" data-parsley-validate="" data-form="booking">
 							<div class="booking__item booking__restaurants">
 								<div class="select-wrapper">
 									<div class="select"><select class="select__select" data-select-placeholder="Какой ресторан?" style="width: 100%" data-checkout-select="">
@@ -783,14 +783,14 @@
 							</div>
 							<div class="booking__item">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона" data-mask-phone><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</div>
 							</div>
 							<div class="booking__item">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date padding-right-54" data-input="" required type="datatime-local" placeholder="Дата" data-airdatepicker="1" data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date padding-right-54" data-input="" required placeholder="Дата" data-airdatepicker="1" data-mask-date data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -842,7 +842,7 @@
 									<div class="input-wrapper__placeholder">Комментарий к брони</div><textarea class="textarea" data-input="" placeholder="Комментарий к брони"></textarea>
 								</div>
 							</div>
-							<div class="booking__item"><button class="booking__btn" data-fancy-button="43b">Забронировать стол</button></div>
+							<div class="booking__item"><button class="booking__btn" type="submit">Забронировать стол</button></div>
 							<div class="booking__item">
 								<div class="booking__text">
 									<p>Нажимая на кнопку "Забронировать стол" вы даете согласие<br />на <a>условия обработки персональных данных</a></p>
@@ -919,7 +919,7 @@
 										</div>
 										<form class="modal-user__bottom">
 											<div class="modal-user__bottom-number modal-user__bottom-active"><input data-mask-phone="" data-parsley-phone="" required placeholder="+7 (___) ___-__-__">
-												<p class="modal-user__conditions">Нажимаю на кнопку «Далее», вы даете согласие на<a class="modal-user__conditions-link">условия обработки персональных данных</a></p><button class="modal-user__btn" data-fancy-button="23u">Далее</button>
+												<p class="modal-user__conditions">Нажимаю на кнопку «Далее», вы даете согласие на<a class="modal-user__conditions-link">условия обработки персональных данных</a></p><button class="modal-user__btn">Далее</button>
 											</div>
 										</form>
 									</div>
@@ -1028,7 +1028,7 @@
 										</div>
 										<div class="booking__item">
 											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона" data-mask-phone><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 												</svg>
 											</div>
@@ -1042,7 +1042,7 @@
 										</div>
 										<div class="booking__item">
 											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date" data-input="" required type="datatime-local" placeholder="Дата" data-airdatepicker="2" data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="input-wrapper__placeholder">Дата</div><input class="input booking__input-date" data-input="" required type="datatime-local" placeholder="Дата" data-mask-date data-airdatepicker="2" data-date-input=""><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 												</svg>
 											</div><svg class="booking__item-calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
