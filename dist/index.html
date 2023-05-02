@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>krokus-html</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="695.css" rel="stylesheet">
@@ -641,7 +641,7 @@
 										</form>
 										<form data-form="sms">
 											<div class="input-wrapper" data-input-parent="">
-												<div class="input-wrapper__placeholder">Введите код из SMS</div><input class="input" data-input="" required placeholder="Введите код из SMS"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<div class="input-wrapper__placeholder">Введите код из SMS</div><input class="input" data-input="" required placeholder="Введите код из SMS" data-input-sms="basket"><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 												</svg>
 											</div><button class="controls__input-btn" id="basket-input-btn">Применить</button><svg class="loader" id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
@@ -649,6 +649,7 @@
 													<animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
 												</path>
 											</svg>
+											<p class="controls__counter">Вы сможете запросить новый код через <span class="controls__counter-span">0:33</span></p>
 										</form>
 										<div class="controls__input-success" data-success="card">
 											<div class="controls__input-success-img">
@@ -766,7 +767,7 @@
 						<form class="form booking__grid" action="#" data-parsley-validate="" data-form="booking">
 							<div class="booking__item booking__restaurants">
 								<div class="select-wrapper">
-									<div class="select"><select class="select__select" data-select-placeholder="Какой ресторан?" style="width: 100%" data-checkout-select="">
+									<div class="select"><select class="select__select" data-select-placeholder="Какой ресторан?" style="width: 100%" data-checkout-select="" required data-parsley-select>
 											<option value="" disabled="disabled" selected="selected"></option>
 											<option value="Fish Box">Fish Box</option>
 											<option value="Zafferano Estate">Zafferano Estate</option>
@@ -783,7 +784,7 @@
 							</div>
 							<div class="booking__item">
 								<div class="input-wrapper" data-input-parent="">
-									<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона" data-mask-phone><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="input-wrapper__placeholder">Номер телефона</div><input class="input booking__phone" data-input="" required placeholder="Номер телефона" data-mask-phone data-parsley-phone><svg class="input-wrapper-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M19 4.87554C20.8491 6.69281 22 9.21853 22 12C22 17.5 17.5 22 12 22C9.28147 22 6.80726 20.9006 5 19.1245M19 4.87554C17.1927 3.0994 14.7185 2 12 2C6.5 2 2 6.5 2 12C2 14.7815 3.1509 17.3072 5 19.1245M19 4.87554L5 19.1245" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</div>
@@ -805,7 +806,7 @@
 							<div class="booking__item">
 								<div class="select-wrapper select-date">
 									<div class="select-wrapper">
-										<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="">
+										<div class="select"><select class="select__select" data-select-placeholder="Время" style="width: 100%" data-checkout-select="" required data-parsley-select>
 												<option value="" disabled="disabled" selected="selected"></option>
 												<option value="14:00">14:00</option>
 												<option value="14:30">14:30</option>
