@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>krokus-html</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="695.css" rel="stylesheet">
+		<link href="561.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -919,7 +919,7 @@
 											<p class="modal-user__info modal-user__text">Введите номер телефона и мы отправим SMS-код для входа в аккаунт</p>
 										</div>
 										<form class="modal-user__bottom">
-											<div class="modal-user__bottom-number modal-user__bottom-active"><input data-mask-phone="" data-parsley-phone required placeholder="+7 (___) ___-__-__">
+											<div class="modal-user__bottom-number modal-user__bottom-active"><input class="input input_placeholder" data-mask-phone="" data-parsley-phone="" required placeholder="+7 (___) ___-__-__">
 												<p class="modal-user__conditions">Нажимаю на кнопку «Далее», вы даете согласие на<a class="modal-user__conditions-link">условия обработки персональных данных</a></p><button class="modal-user__btn">Далее</button>
 											</div>
 										</form>
@@ -981,6 +981,13 @@
 						</div>
 						<div class="row__col">
 							<div class="test">Тест</div>
+							<div class="modal-repeat" data-fancy-modal="mr1">
+								<div class="modal-repeat__inner">
+									<p class="modal-repeat__title">Повторить этот заказ?</p>
+									<p class="modal-repeat__text">По адресу: ул. Балакирева, 6, микрорайон Опалиха, Красногорск</p>
+									<div class="row"><button class="modal-repeat__btn_no">Нет</button><button class="modal-repeat__btn_yes">Да</button></div>
+								</div>
+							</div>
 							<section class="profile">
 								<div class="profile__col profile__col-submenu">
 									<div class="submenu profile-active">
@@ -1034,26 +1041,26 @@
 											<div class="orders__inner">
 												<div class="orders__item orders__item_active">
 													<div class="orders__item-row">
-														<p class="orders__item-order">Заказ 2388</p>
+														<p class="orders__item-order">Заказ №2388</p>
 														<p class="orders__item-price">23 800₽</p>
 													</div>
 													<div class="orders__item-row">
 														<p class="orders__item-date orders__item-text">24 января 2023, 18:35</p>
 													</div>
 													<div class="orders__item-row">
-														<p class="orders__item-status orders__item-text">ждет подтверждения</p>
+														<p class="orders__item-status orders__item-text">Ждет подтверждения</p>
 													</div>
 												</div>
 												<div class="orders__item">
 													<div class="orders__item-row">
-														<p class="orders__item-order">Заказ 2388</p>
+														<p class="orders__item-order">Заказ №2388</p>
 														<p class="orders__item-price">23 800₽</p>
 													</div>
 													<div class="orders__item-row">
 														<p class="orders__item-date orders__item-text">24 января 2023, 18:35</p>
 													</div>
 													<div class="orders__item-row">
-														<p class="orders__item-status orders__item-text">ждет подтверждения</p>
+														<p class="orders__item-status orders__item-text">Ждет подтверждения</p>
 													</div>
 												</div>
 											</div>
@@ -1071,20 +1078,7 @@
 													</div>
 													<div class="status__top-items">
 														<div class="transferred">
-															<div class="transferred__col"><svg class="transferred-svg" width="55" height="31" viewBox="0 0 55 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M13.6933 0.5H31.3894C37.2493 0.5 42.8144 3.06989 46.6143 7.53067L47.8126 8.93743L53.09 15.1326C54.3229 16.5799 55.0001 18.4191 55.0001 20.3203V24.1248C55.0001 25.2293 54.1046 26.1248 53.0001 26.1248H12.1627C10.8715 26.1248 9.72504 25.2985 9.31669 24.0735L7.92599 19.9014C7.64728 19.0652 7.59454 18.1703 7.77311 17.3072L10.7555 2.89218C11.0437 1.49911 12.2707 0.5 13.6933 0.5Z" fill="url(#paint0_linear_508_27060)"></path>
-																	<path d="M38.7505 8H47.5004L54.3753 15.4999H38.7505C36.6794 15.4999 35.0005 13.821 35.0005 11.75C35.0005 9.67892 36.6794 8 38.7505 8Z" fill="white"></path>
-																	<circle cx="19.375" cy="26.125" r="4.37496" fill="#131313"></circle>
-																	<circle cx="44.375" cy="26.125" r="4.37496" fill="#131313"></circle>
-																	<line x1="17.25" y1="8.24902" x2="1.50017" y2="8.24902" stroke="#A0E1DC" stroke-width="3" stroke-linecap="round"></line>
-																	<line x1="14.75" y1="13.25" x2="5.25011" y2="13.25" stroke="#A0E1DC" stroke-width="3" stroke-linecap="round"></line>
-																	<defs>
-																		<lineargradient id="paint0_linear_508_27060" x1="31.2503" y1="0.5" x2="31.2503" y2="36.7497" gradientUnits="userSpaceOnUse">
-																			<stop offset="0.255208" stop-color="#92CFCB"></stop>
-																			<stop offset="0.958333" stop-color="#1D3F3D"></stop>
-																		</lineargradient>
-																	</defs>
-																</svg></div>
+															<div class="transferred__col" id="lottie-car"></div>
 															<div class="transferred__col">
 																<p class="transferred__text">Ваш заказ</p>
 																<p class="transferred__status">Передан в доставку</p>
@@ -1111,7 +1105,7 @@
 																<p class="success__status">Доставлен</p>
 															</div>
 														</div>
-														<div class="status__btn"><svg class="status__btn-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<div class="status__btn" data-fancy-button="mr1"><svg class="status__btn-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M15.3901 5.58039C14.5201 5.32039 13.5601 5.15039 12.5001 5.15039C7.71008 5.15039 3.83008 9.03039 3.83008 13.8204C3.83008 18.6204 7.71008 22.5004 12.5001 22.5004C17.2901 22.5004 21.1701 18.6204 21.1701 13.8304C21.1701 12.0504 20.6301 10.3904 19.7101 9.01039" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 																<path d="M16.6302 5.82L13.7402 2.5" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 																<path d="M16.6298 5.82031L13.2598 8.28031" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1119,48 +1113,14 @@
 															<p class="status__btn-text">Повторить</p>
 														</div>
 														<div class="expects">
-															<div class="expects__col"><svg class="expects-svg" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M25.2997 6.02048C24.9678 6.35218 24.5177 6.53865 24.0483 6.53865L24.0483 6.53871C23.5795 6.53811 23.1297 6.35164 22.798 6.01995C22.4663 5.68824 22.2799 5.23848 22.2793 4.76932C22.2793 4.30023 22.4657 3.84986 22.7974 3.51817C23.1294 3.18617 23.5794 3 24.0486 3C24.518 3 24.968 3.18647 25.2997 3.51817C25.6317 3.8501 25.8179 4.30016 25.8179 4.76932C25.8179 5.23873 25.6314 5.68879 25.2997 6.02048ZM38.9988 10.0296C38.9988 10.6267 38.7618 11.1989 38.3399 11.6209C37.9176 12.0431 37.3453 12.2801 36.7483 12.2801C36.1515 12.2801 35.5789 12.0431 35.157 11.6209C34.7351 11.1989 34.4978 10.6267 34.4978 10.0296C34.4978 9.43283 34.7351 8.86027 35.157 8.43833C35.579 8.01638 36.1515 7.77911 36.7483 7.77911C37.3454 7.77911 37.9176 8.01638 38.3399 8.43833C38.7618 8.8603 38.9988 9.43284 38.9988 10.0296ZM42.0087 20.2388C41.348 20.2388 40.7145 20.5014 40.2475 20.9685C39.7801 21.4356 39.5177 22.0694 39.5177 22.7298C39.5177 23.3905 39.7801 24.0243 40.2475 24.4913C40.7145 24.9584 41.3481 25.2211 42.0087 25.2211C42.6694 25.2211 43.3033 24.9584 43.7703 24.4913C44.2374 24.0243 44.5 23.3904 44.5 22.7298C44.4991 22.0694 44.2365 21.4362 43.7694 20.969C43.3023 20.5023 42.6691 20.2396 42.0087 20.2387L42.0087 20.2388ZM34.5805 33.7677C35.0975 33.0941 35.8986 32.6991 36.7479 32.6991C37.4728 32.6973 38.1682 32.9853 38.6792 33.4993C39.2798 34.0997 39.567 34.9456 39.4561 35.7877C39.3453 36.6299 38.8492 37.3725 38.1135 37.7971C37.3781 38.2217 36.4867 38.2803 35.702 37.9552C34.9172 37.6301 34.3286 36.9586 34.1086 36.138C33.889 35.3178 34.0632 34.4416 34.5805 33.7677ZM24.0481 37.719C23.26 37.719 22.504 38.0322 21.9464 38.5895C21.3891 39.1471 21.0759 39.9028 21.0759 40.6912C21.0759 41.4795 21.3891 42.2355 21.9467 42.7929C22.504 43.3505 23.26 43.6633 24.0481 43.6633C24.8364 43.6633 25.5924 43.3505 26.1497 42.7929C26.7074 42.2355 27.0205 41.4795 27.0205 40.6912C27.0197 39.9031 26.7062 39.1477 26.1488 38.5907C25.5918 38.0334 24.8361 37.7199 24.0481 37.719ZM8.13439 35.4306C8.13439 34.5787 8.47268 33.7616 9.07542 33.1589C9.67847 32.5574 10.4954 32.2194 11.3471 32.2194C12.199 32.2194 13.016 32.5573 13.6188 33.1589C14.2212 33.7616 14.5598 34.5786 14.5598 35.4306C14.5598 36.2828 14.2212 37.0998 13.6188 37.7022C13.0163 38.3047 12.199 38.6433 11.3471 38.6433C10.4952 38.6433 9.67787 38.3047 9.07542 37.7022C8.47296 37.0998 8.13439 36.2828 8.13439 35.4306ZM9.53988 22.7301C9.53958 21.8145 9.17591 20.9363 8.52832 20.2887C7.88073 19.6411 7.00222 19.2771 6.08659 19.2771C5.17065 19.2771 4.29243 19.6411 3.64486 20.2887C2.9973 20.9363 2.6333 21.8148 2.6333 22.7304C2.6336 23.6464 2.99727 24.5246 3.64486 25.1722C4.29242 25.8197 5.17096 26.1837 6.08659 26.1834C7.00222 26.1825 7.87983 25.8183 8.5274 25.171C9.17466 24.5235 9.53865 23.6458 9.5398 22.7302L9.53988 22.7301ZM11.0443 7.59333C11.915 7.01838 13.0261 6.95174 13.9593 7.41822L13.9594 7.41829C14.8926 7.88471 15.5058 8.8138 15.5683 9.8552C15.6308 10.8967 15.1329 11.892 14.2624 12.467C13.3919 13.0419 12.2805 13.1086 11.3476 12.6418C10.4144 12.1753 9.80118 11.2465 9.73872 10.2051C9.67591 9.16365 10.1738 8.16798 11.0443 7.59333Z" fill="url(#paint0_linear_508_26465)"></path>
-																	<path d="M24 16V22.5L31.5 30" stroke="url(#paint1_linear_508_26465)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																	<defs>
-																		<lineargradient id="paint0_linear_508_26465" x1="23.5667" y1="3" x2="23.5667" y2="45.7812" gradientUnits="userSpaceOnUse">
-																			<stop offset="0.255208" stop-color="#92CFCB"></stop>
-																			<stop offset="0.958333" stop-color="#1D3F3D"></stop>
-																		</lineargradient>
-																		<lineargradient id="paint1_linear_508_26465" x1="23" y1="12.5" x2="25" y2="23.5" gradientUnits="userSpaceOnUse">
-																			<stop offset="0.255208" stop-color="#92CFCB"></stop>
-																			<stop offset="0.958333" stop-color="#122726"></stop>
-																		</lineargradient>
-																	</defs>
-																</svg></div>
+															<div class="expects__col" id="lottie-clock"></div>
 															<div class="expects__col">
-																<p class="expects__text">Ваш Заказ</p>
+																<p class="expects__text">Ваш заказ</p>
 																<p class="expexts__status">Ждет подтверждения</p>
 															</div>
 														</div>
-														<div class="ready-status"><svg class="ready-status-svg" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_508_26966)">
-																	<path d="M0.5 20.3335H40.3667V21.4287C40.3667 32.4376 31.4422 41.3621 20.4334 41.3621C9.42447 41.3621 0.5 32.4376 0.5 21.4287V20.3335Z" fill="url(#paint0_linear_508_26966)"></path>
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M46.5002 21.4287C46.5002 20.8239 46.0098 20.3335 45.405 20.3335H43.8723H41.6818H41.6812V22.524H41.6818V24.0573C41.6818 24.6622 42.1722 25.1525 42.7771 25.1525C43.382 25.1525 43.8723 24.6622 43.8723 24.0573V22.524H45.405C46.0098 22.524 46.5002 22.0336 46.5002 21.4287Z" fill="url(#paint1_linear_508_26966)"></path>
-																	<path d="M27.5008 19.0412C34.4999 11.5141 43.7586 12.7935 43.7586 12.7935C43.7586 12.7935 45.1132 12.5689 44.9744 10.5361C44.8344 8.50488 42.7103 8.50488 42.7103 8.50488C32.4024 9.33172 24.5957 19.0412 24.5957 19.0412H27.5008Z" fill="#131313"></path>
-																	<rect x="17.2715" y="8.50488" width="1.75238" height="10.5143" rx="0.876191" fill="#4FC7BE"></rect>
-																	<rect x="8.26172" y="8.50488" width="1.75238" height="10.5143" rx="0.876191" fill="#4FC7BE"></rect>
-																	<rect x="12.7676" y="5" width="1.75238" height="14.0191" rx="0.876191" fill="#131313"></rect>
-																</g>
-																<defs>
-																	<lineargradient id="paint0_linear_508_26966" x1="20.4334" y1="20.3335" x2="20.4334" y2="42.4573" gradientUnits="userSpaceOnUse">
-																		<stop offset="0.255208" stop-color="#92CFCB"></stop>
-																		<stop offset="0.958333" stop-color="#1D3F3D"></stop>
-																	</lineargradient>
-																	<lineargradient id="paint1_linear_508_26966" x1="44.0907" y1="20.3335" x2="44.0907" y2="28.2192" gradientUnits="userSpaceOnUse">
-																		<stop offset="0.255208" stop-color="#92CFCB"></stop>
-																		<stop offset="0.958333" stop-color="#1D3F3D"></stop>
-																	</lineargradient>
-																	<clippath id="clip0_508_26966">
-																		<rect width="46" height="46" fill="white" transform="translate(0.5 0.5)"></rect>
-																	</clippath>
-																</defs>
-															</svg>
+														<div class="ready-status">
+															<div class="ready-status__col" id="lottie-cup"></div>
 															<div class="ready-status__col">
 																<p class="ready-status__text">Ваш заказ</p>
 																<p class="ready-status__status">Готовится</p>
@@ -1222,7 +1182,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1231,7 +1191,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1240,7 +1200,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1254,7 +1214,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1263,7 +1223,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1272,7 +1232,7 @@
 																<div class="restaurant__item">
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-dish">Блюдо</p>
-																		<p class="restaurant__item-price">1233</p>
+																		<p class="restaurant__item-price">2 480₽</p>
 																	</div>
 																	<div class="restaurant__item-row">
 																		<p class="restaurant__item-quantity status__subtext">1 шт</p>
@@ -1283,7 +1243,7 @@
 													</div>
 													<div class="status__middle-row">
 														<p class="status__amount">Сумма заказа</p>
-														<p class="status__price">12321</p>
+														<p class="status__price">2 480₽</p>
 													</div>
 												</div>
 												<div class="status__bottom">

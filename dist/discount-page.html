@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>krokus-html</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="695.css" rel="stylesheet">
+		<link href="561.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -919,7 +919,7 @@
 											<p class="modal-user__info modal-user__text">Введите номер телефона и мы отправим SMS-код для входа в аккаунт</p>
 										</div>
 										<form class="modal-user__bottom">
-											<div class="modal-user__bottom-number modal-user__bottom-active"><input data-mask-phone="" data-parsley-phone required placeholder="+7 (___) ___-__-__">
+											<div class="modal-user__bottom-number modal-user__bottom-active"><input class="input input_placeholder" data-mask-phone="" data-parsley-phone="" required placeholder="+7 (___) ___-__-__">
 												<p class="modal-user__conditions">Нажимаю на кнопку «Далее», вы даете согласие на<a class="modal-user__conditions-link">условия обработки персональных данных</a></p><button class="modal-user__btn">Далее</button>
 											</div>
 										</form>
@@ -1047,7 +1047,7 @@
 															<path d="M4 9.5L8.32824 14L17 5" stroke="#4FC7BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></div>
 													<div class="col">
-														<p>Чтобы получить скидку 10% на все позиции, нужно совершить заказов на сумму 300 000 ₽ или более в течении года с момента регистрации</p>
+														<p class="discount__text" data-discount-text="1">Чтобы получить скидку 10% на все позиции, нужно совершить заказов на сумму 300 000 ₽ или более в течении года с момента регистрации</p>
 													</div>
 												</li>
 												<li class="discount__item">
@@ -1055,7 +1055,7 @@
 															<path d="M4 9.5L8.32824 14L17 5" stroke="#4FC7BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														</svg></div>
 													<div class="col">
-														<p>Чтобы скидка была активной, нужно каждый месяц совершать заказов на сумму 40 000 ₽ или более. Если в течение месяца условие выполнено не будет, накопленный прогресс сгорает</p>
+														<p class="discount__text" data-discount-text="2">Чтобы скидка была активной, нужно каждый месяц совершать заказов на сумму 40 000 ₽ или более. Если в течение месяца условие выполнено не будет, накопленный прогресс сгорает</p>
 													</div>
 												</li>
 											</ul>
@@ -1081,7 +1081,7 @@
 											<div class="discount__progressbar">
 												<div class="progressbar">
 													<div class="progressbar__title">
-														<h3>Для скидки 10% осталось</h3><span>0₽</span>
+														<h3>До скидки 10% осталось</h3><span>0₽</span>
 													</div>
 													<div class="progressbar__container">
 														<div class="progressbar__inner">
@@ -1093,13 +1093,13 @@
 															<p class="progressbar__money-current">5 699₽</p>
 															<p class="progressbar__money-remainder">5 633399₽</p>
 														</div>
-														<p class="progressbar__status_success">Вы накопили 3000 - условине выполнено</p>
+														<p class="progressbar__status_success">Вы накопили 3000 - условие выполнено</p>
 														<p class="progressbar__status_expectation">Осталось дней для выполнения условия: 364</p>
 													</div>
 												</div>
 												<div class="progressbar">
 													<div class="progressbar__title">
-														<h3>Для скидки 10% осталось</h3><span>0₽</span>
+														<h3>До активации скидки 10% осталось</h3><span>0₽</span>
 													</div>
 													<div class="progressbar__container">
 														<div class="progressbar__inner">
@@ -1111,7 +1111,7 @@
 															<p class="progressbar__money-current">5 699₽</p>
 															<p class="progressbar__money-remainder">5 633399₽</p>
 														</div>
-														<p class="progressbar__status_success">Вы накопили 3000 - условине выполнено</p>
+														<p class="progressbar__status_success">Вы накопили 40 000₽ за месяц - условие выполнено</p>
 														<p class="progressbar__status_expectation">Осталось дней для выполнения условия: 364</p>
 													</div>
 												</div>
